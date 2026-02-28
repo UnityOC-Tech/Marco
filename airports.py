@@ -219,7 +219,7 @@ AIRPORTS = [
     {"name": 'Vientiane Wattay International Airport', "city": 'Vientiane', "country": 'Laos', "iata": 'VTE', "icao": 'VLVT', "lat": 17.9883, "lon": 102.5633, "alt": 564, "tz": 'Asia/Vientiane'},
     {"name": 'Amman Queen Alia International Airport', "city": 'Amman', "country": 'Jordan', "iata": 'AMM', "icao": 'OJAI', "lat": 31.7226, "lon": 35.9932, "alt": 2395, "tz": 'Asia/Amman'},
     {"name": 'Blaise Diagne International Airport', "city": 'Dakar', "country": 'Senegal', "iata": 'DSS', "icao": 'GOBD', "lat": 14.67, "lon": -17.073, "alt": 90, "tz": 'Africa/Dakar'},
-    {"name": 'Abidjan Felix-Houphouet-Boigny Intl', "city": 'Abidjan', "country": 'Ivory Coast', "iata": 'ABJ', "icao": 'DIAP', "lat": 5.2614, "lon": -3.9263, "alt": 21, "tz": 'Africa/Abidjan'},
+    {"name": 'Abidjan Felix-Houphouet-Boigny Intl', "city": 'Abidjan', "country": 'Cote d\'Ivoire', "iata": 'ABJ', "icao": 'DIAP', "lat": 5.2614, "lon": -3.9263, "alt": 21, "tz": 'Africa/Abidjan'},
     {"name": 'Kigali International Airport', "city": 'Kigali', "country": 'Rwanda', "iata": 'KGL', "icao": 'HRYR', "lat": -1.9686, "lon": 30.1395, "alt": 4859, "tz": 'Africa/Kigali'},
     {"name": 'Entebbe International Airport', "city": 'Entebbe', "country": 'Uganda', "iata": 'EBB', "icao": 'HUEN', "lat": 0.0424, "lon": 32.4435, "alt": 3782, "tz": 'Africa/Kampala'},
     {"name": 'St Louis Lambert International Airport', "city": 'St. Louis', "country": 'United States', "iata": 'STL', "icao": 'KSTL', "lat": 38.7487, "lon": -90.37, "alt": 618, "tz": 'America/Chicago'},
@@ -282,7 +282,7 @@ AIRPORTS = [
     {"name": 'Toncontin International Airport', "city": 'Tegucigalpa', "country": 'Honduras', "iata": 'TGU', "icao": 'MHTG', "lat": 14.0608, "lon": -87.2172, "alt": 3294, "tz": 'America/Tegucigalpa'},
     {"name": 'El Salvador International Airport', "city": 'San Salvador', "country": 'El Salvador', "iata": 'SAL', "icao": 'MSSS', "lat": 13.4409, "lon": -89.0557, "alt": 101, "tz": 'America/El_Salvador'},
     {"name": 'Augusto C. Sandino International Airport', "city": 'Managua', "country": 'Nicaragua', "iata": 'MGA', "icao": 'MNMG', "lat": 12.1415, "lon": -86.1682, "alt": 194, "tz": 'America/Managua'},
-    {"name": 'Punta Cana International Airport', "city": 'Punta Cana', "country": 'Dominican Rep.', "iata": 'PUJ', "icao": 'MDPC', "lat": 18.5674, "lon": -68.3634, "alt": 47, "tz": 'America/Santo_Domingo'},
+    {"name": 'Punta Cana International Airport', "city": 'Punta Cana', "country": 'Dominican Republic', "iata": 'PUJ', "icao": 'MDPC', "lat": 18.5674, "lon": -68.3634, "alt": 47, "tz": 'America/Santo_Domingo'},
     {"name": 'Recife Guararapes International Airport', "city": 'Recife', "country": 'Brazil', "iata": 'REC', "icao": 'SBRF', "lat": -8.1265, "lon": -34.9231, "alt": 33, "tz": 'America/Recife'},
     {"name": 'Salvador Deputado Luis Eduardo Magalhaes', "city": 'Salvador', "country": 'Brazil', "iata": 'SSA', "icao": 'SBSV', "lat": -12.9086, "lon": -38.3225, "alt": 64, "tz": 'America/Bahia'},
     {"name": 'Belo Horizonte Confins Intl Airport', "city": 'Belo Horizonte', "country": 'Brazil', "iata": 'CNF', "icao": 'SBCF', "lat": -19.6244, "lon": -43.9719, "alt": 2715, "tz": 'America/Sao_Paulo'},
@@ -347,7 +347,7 @@ AIRPORTS = [
     {"name": 'Katowice International Airport', "city": 'Katowice', "country": 'Poland', "iata": 'KTW', "icao": 'EPKT', "lat": 50.4744, "lon": 19.08, "alt": 995, "tz": 'Europe/Warsaw'},
     {"name": 'Bratislava MR Stefanik Airport', "city": 'Bratislava', "country": 'Slovakia', "iata": 'BTS', "icao": 'LZIB', "lat": 48.1702, "lon": 17.2127, "alt": 436, "tz": 'Europe/Bratislava'},
     {"name": 'Ljubljana Joze Pucnik Airport', "city": 'Ljubljana', "country": 'Slovenia', "iata": 'LJU', "icao": 'LJLJ', "lat": 46.2237, "lon": 14.4576, "alt": 1273, "tz": 'Europe/Ljubljana'},
-    {"name": 'Sarajevo International Airport', "city": 'Sarajevo', "country": 'Bosnia', "iata": 'SJJ', "icao": 'LQSA', "lat": 43.8246, "lon": 18.3315, "alt": 1708, "tz": 'Europe/Sarajevo'},
+    {"name": 'Sarajevo International Airport', "city": 'Sarajevo', "country": 'Bosnia and Herzegovina', "iata": 'SJJ', "icao": 'LQSA', "lat": 43.8246, "lon": 18.3315, "alt": 1708, "tz": 'Europe/Sarajevo'},
     {"name": 'Skopje Alexander the Great Airport', "city": 'Skopje', "country": 'N. Macedonia', "iata": 'SKP', "icao": 'LWSK', "lat": 41.9616, "lon": 21.6214, "alt": 781, "tz": 'Europe/Skopje'},
     {"name": 'Tirana Nene Tereza International Airport', "city": 'Tirana', "country": 'Albania', "iata": 'TIA', "icao": 'LATI', "lat": 41.4147, "lon": 19.7206, "alt": 126, "tz": 'Europe/Tirane'},
     {"name": 'Podgorica Golubovci Airport', "city": 'Podgorica', "country": 'Montenegro', "iata": 'TGD', "icao": 'LYPG', "lat": 42.3594, "lon": 19.2519, "alt": 141, "tz": 'Europe/Podgorica'},
@@ -2057,7 +2057,429 @@ AIRPORTS = [
     # ── Bosnia and Herzegovina ────────────────────────────────────────────────
     {"name": 'Banja Luka International Airport', "city": 'Banja Luka', "country": 'Bosnia and Herzegovina', "iata": 'BNX', "icao": 'LQBK', "lat": 44.9414, "lon": 17.2975, "alt": 400, "tz": 'Europe/Sarajevo'},
     {"name": 'Mostar Airport', "city": 'Mostar', "country": 'Bosnia and Herzegovina', "iata": 'OMO', "icao": 'LQMO', "lat": 43.2829, "lon": 17.8459, "alt": 156, "tz": 'Europe/Sarajevo'},
-    {"name": 'Tuzla International Airport', "city": 'Tuzla', "country": 'Bosnia and Herzegovina', "iata": 'TZL', "icao": 'LQTZ', "lat": 44.4587, "lon": 18.7248, "alt": 784, "tz": 'Europe/Sarajevo'}
+    {"name": 'Tuzla International Airport', "city": 'Tuzla', "country": 'Bosnia and Herzegovina', "iata": 'TZL', "icao": 'LQTZ', "lat": 44.4587, "lon": 18.7248, "alt": 784, "tz": 'Europe/Sarajevo'},
+
+    # ── Ethiopia ──────────────────────────────────────────────────────────────
+    {"name": 'Dire Dawa International Airport', "city": 'Dire Dawa', "country": 'Ethiopia', "iata": 'DIR', "icao": 'HADR', "lat": 9.6247, "lon": 41.8542, "alt": 3827, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Mekele Alula Aba Nega Airport', "city": 'Mekele', "country": 'Ethiopia', "iata": 'MQX', "icao": 'HAMK', "lat": 13.4674, "lon": 39.5335, "alt": 7396, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Gondar Airport', "city": 'Gondar', "country": 'Ethiopia', "iata": 'GDQ', "icao": 'HAGN', "lat": 12.5199, "lon": 37.4340, "alt": 6449, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Bahir Dar Airport', "city": 'Bahir Dar', "country": 'Ethiopia', "iata": 'BJR', "icao": 'HABD', "lat": 11.6081, "lon": 37.3216, "alt": 5978, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Jimma Airport', "city": 'Jimma', "country": 'Ethiopia', "iata": 'JIM', "icao": 'HAJM', "lat": 7.6661, "lon": 36.8166, "alt": 5500, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Lalibela Airport', "city": 'Lalibela', "country": 'Ethiopia', "iata": 'LLI', "icao": 'HALL', "lat": 11.9750, "lon": 38.9800, "alt": 6506, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Axum Airport', "city": 'Axum', "country": 'Ethiopia', "iata": 'AXU', "icao": 'HAAX', "lat": 14.1468, "lon": 38.7728, "alt": 6959, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Arba Minch Airport', "city": 'Arba Minch', "country": 'Ethiopia', "iata": 'AMH', "icao": 'HAAM', "lat": 6.0393, "lon": 37.5905, "alt": 3901, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Gambela Airport', "city": 'Gambela', "country": 'Ethiopia', "iata": 'GMB', "icao": 'HAGM', "lat": 8.1288, "lon": 34.5631, "alt": 1614, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Dessie Airport', "city": 'Dessie', "country": 'Ethiopia', "iata": 'DSE', "icao": 'HADS', "lat": 11.1000, "lon": 39.9833, "alt": 7959, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Hawassa Airport', "city": 'Hawassa', "country": 'Ethiopia', "iata": 'AWA', "icao": 'HAAW', "lat": 7.0600, "lon": 38.4633, "alt": 5450, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Jinka Airport', "city": 'Jinka', "country": 'Ethiopia', "iata": 'BCO', "icao": 'HAJI', "lat": 5.7932, "lon": 36.5650, "alt": 4616, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Nekemte Airport', "city": 'Nekemte', "country": 'Ethiopia', "iata": 'NEK', "icao": 'HANK', "lat": 9.0700, "lon": 36.5000, "alt": 6398, "tz": 'Africa/Addis_Ababa'},
+    {"name": 'Shire Indasilase Airport', "city": 'Shire', "country": 'Ethiopia', "iata": 'SHC', "icao": 'HASH', "lat": 14.0782, "lon": 38.2722, "alt": 6207, "tz": 'Africa/Addis_Ababa'},
+
+    # ── Eritrea ───────────────────────────────────────────────────────────────
+    {"name": 'Massawa International Airport', "city": 'Massawa', "country": 'Eritrea', "iata": 'MSW', "icao": 'HHMS', "lat": 15.6700, "lon": 39.3700, "alt": 194, "tz": 'Africa/Asmara'},
+    {"name": 'Assab Airport', "city": 'Assab', "country": 'Eritrea', "iata": 'ASA', "icao": 'HHSB', "lat": 13.0718, "lon": 42.6450, "alt": 46, "tz": 'Africa/Asmara'},
+    {"name": 'Tessenei Airport', "city": 'Tessenei', "country": 'Eritrea', "iata": 'TES', "icao": 'HHTS', "lat": 15.1100, "lon": 36.6583, "alt": 2119, "tz": 'Africa/Asmara'},
+
+    # ── Sudan ─────────────────────────────────────────────────────────────────
+    {"name": 'Port Sudan New International Airport', "city": 'Port Sudan', "country": 'Sudan', "iata": 'PZU', "icao": 'HSPN', "lat": 19.4336, "lon": 37.2341, "alt": 135, "tz": 'Africa/Khartoum'},
+    {"name": 'El Obeid Airport', "city": 'El Obeid', "country": 'Sudan', "iata": 'EBD', "icao": 'HSOB', "lat": 13.1532, "lon": 30.2327, "alt": 1927, "tz": 'Africa/Khartoum'},
+    {"name": 'Kassala Airport', "city": 'Kassala', "country": 'Sudan', "iata": 'KSL', "icao": 'HSKA', "lat": 15.3875, "lon": 36.3288, "alt": 1671, "tz": 'Africa/Khartoum'},
+    {"name": 'El Fasher Airport', "city": 'El Fasher', "country": 'Sudan', "iata": 'ELF', "icao": 'HSFS', "lat": 13.6149, "lon": 25.3246, "alt": 2393, "tz": 'Africa/Khartoum'},
+    {"name": 'Nyala Airport', "city": 'Nyala', "country": 'Sudan', "iata": 'UYL', "icao": 'HSNN', "lat": 12.0535, "lon": 24.9562, "alt": 2106, "tz": 'Africa/Khartoum'},
+    {"name": 'Atbara Airport', "city": 'Atbara', "country": 'Sudan', "iata": 'ATB', "icao": 'HSAT', "lat": 17.7103, "lon": 34.0570, "alt": 1181, "tz": 'Africa/Khartoum'},
+    {"name": 'Wadi Halfa Airport', "city": 'Wadi Halfa', "country": 'Sudan', "iata": 'WHF', "icao": 'HSWH', "lat": 21.8027, "lon": 31.5216, "alt": 961, "tz": 'Africa/Khartoum'},
+    {"name": 'Geneina Airport', "city": 'Geneina', "country": 'Sudan', "iata": 'EGN', "icao": 'HSGN', "lat": 13.4817, "lon": 22.4672, "alt": 2650, "tz": 'Africa/Khartoum'},
+    {"name": 'Dongola Airport', "city": 'Dongola', "country": 'Sudan', "iata": 'DOG', "icao": 'HSDN', "lat": 19.1539, "lon": 30.4301, "alt": 772, "tz": 'Africa/Khartoum'},
+
+    # ── South Sudan ───────────────────────────────────────────────────────────
+    {"name": 'Juba International Airport', "city": 'Juba', "country": 'South Sudan', "iata": 'JUB', "icao": 'HSSJ', "lat": 4.8720, "lon": 31.6011, "alt": 1513, "tz": 'Africa/Juba'},
+    {"name": 'Malakal Airport', "city": 'Malakal', "country": 'South Sudan', "iata": 'MAK', "icao": 'HSSM', "lat": 9.5589, "lon": 31.6522, "alt": 1291, "tz": 'Africa/Juba'},
+    {"name": 'Wau Airport', "city": 'Wau', "country": 'South Sudan', "iata": 'WUU', "icao": 'HSWU', "lat": 7.7258, "lon": 27.9750, "alt": 1529, "tz": 'Africa/Juba'},
+    {"name": 'Rumbek Airport', "city": 'Rumbek', "country": 'South Sudan', "iata": 'RBX', "icao": 'HSSR', "lat": 6.8249, "lon": 29.6689, "alt": 1378, "tz": 'Africa/Juba'},
+    {"name": 'Bor Airport', "city": 'Bor', "country": 'South Sudan', "iata": 'BOR', "icao": 'HSBR', "lat": 6.2097, "lon": 31.5558, "alt": 1394, "tz": 'Africa/Juba'},
+    {"name": 'Aweil Airport', "city": 'Aweil', "country": 'South Sudan', "iata": 'AWL', "icao": 'HSAW', "lat": 8.7670, "lon": 27.3997, "alt": 1394, "tz": 'Africa/Juba'},
+
+    # ── Zambia ────────────────────────────────────────────────────────────────
+    {"name": 'Simon Mwansa Kapwepwe Airport', "city": 'Ndola', "country": 'Zambia', "iata": 'NLA', "icao": 'FLND', "lat": -12.9981, "lon": 28.6649, "alt": 4167, "tz": 'Africa/Lusaka'},
+    {"name": 'Harry Mwanga Nkumbula Airport', "city": 'Livingstone', "country": 'Zambia', "iata": 'LVI', "icao": 'FLLI', "lat": -17.8218, "lon": 25.8227, "alt": 3302, "tz": 'Africa/Lusaka'},
+    {"name": 'Mfuwe Airport', "city": 'Mfuwe', "country": 'Zambia', "iata": 'MFU', "icao": 'FLMF', "lat": -13.2589, "lon": 31.9366, "alt": 1853, "tz": 'Africa/Lusaka'},
+    {"name": 'Chipata Airport', "city": 'Chipata', "country": 'Zambia', "iata": 'CIP', "icao": 'FLCP', "lat": -13.5583, "lon": 32.5872, "alt": 3360, "tz": 'Africa/Lusaka'},
+    {"name": 'Kasama Airport', "city": 'Kasama', "country": 'Zambia', "iata": 'KAA', "icao": 'FLKS', "lat": -10.2167, "lon": 31.1333, "alt": 4541, "tz": 'Africa/Lusaka'},
+    {"name": 'Solwezi Airport', "city": 'Solwezi', "country": 'Zambia', "iata": 'SLI', "icao": 'FLSW', "lat": -12.1737, "lon": 26.3651, "alt": 4551, "tz": 'Africa/Lusaka'},
+    {"name": 'Mongu Airport', "city": 'Mongu', "country": 'Zambia', "iata": 'MNR', "icao": 'FLMG', "lat": -15.2545, "lon": 23.1562, "alt": 3488, "tz": 'Africa/Lusaka'},
+    {"name": 'Kabwe Airport', "city": 'Kabwe', "country": 'Zambia', "iata": 'KBW', "icao": 'FLKA', "lat": -14.3000, "lon": 28.4833, "alt": 3779, "tz": 'Africa/Lusaka'},
+
+    # ── Cote d'Ivoire ─────────────────────────────────────────────────────────
+    {"name": 'Bouake Airport', "city": 'Bouake', "country": "Cote d'Ivoire", "iata": 'BYK', "icao": 'DIBK', "lat": 7.7388, "lon": -5.0737, "alt": 1230, "tz": 'Africa/Abidjan'},
+    {"name": 'San Pedro Airport', "city": 'San Pedro', "country": "Cote d'Ivoire", "iata": 'SPY', "icao": 'DISP', "lat": 4.7467, "lon": -6.6608, "alt": 26, "tz": 'Africa/Abidjan'},
+    {"name": 'Yamoussoukro Airport', "city": 'Yamoussoukro', "country": "Cote d'Ivoire", "iata": 'ASK', "icao": 'DIYO', "lat": 6.9032, "lon": -5.3656, "alt": 699, "tz": 'Africa/Abidjan'},
+    {"name": 'Korhogo Airport', "city": 'Korhogo', "country": "Cote d'Ivoire", "iata": 'HGO', "icao": 'DIKO', "lat": 9.3872, "lon": -5.5566, "alt": 1214, "tz": 'Africa/Abidjan'},
+    {"name": 'Man Airport', "city": 'Man', "country": "Cote d'Ivoire", "iata": 'MJC', "icao": 'DIMN', "lat": 7.2726, "lon": -7.5873, "alt": 1089, "tz": 'Africa/Abidjan'},
+    {"name": 'Daloa Airport', "city": 'Daloa', "country": "Cote d'Ivoire", "iata": 'DJO', "icao": 'DIDL', "lat": 6.7928, "lon": -6.4732, "alt": 902, "tz": 'Africa/Abidjan'},
+    {"name": 'Odienne Airport', "city": 'Odienne', "country": "Cote d'Ivoire", "iata": 'KEO', "icao": 'DIOD', "lat": 9.5000, "lon": -7.5667, "alt": 1365, "tz": 'Africa/Abidjan'},
+
+    # ── Angola ────────────────────────────────────────────────────────────────
+    {"name": 'Huambo Airport', "city": 'Huambo', "country": 'Angola', "iata": 'NOV', "icao": 'FNHU', "lat": -12.8089, "lon": 15.7605, "alt": 5587, "tz": 'Africa/Luanda'},
+    {"name": 'Lubango Airport', "city": 'Lubango', "country": 'Angola', "iata": 'SDD', "icao": 'FNUB', "lat": -14.9247, "lon": 13.5750, "alt": 5778, "tz": 'Africa/Luanda'},
+    {"name": 'Cabinda Airport', "city": 'Cabinda', "country": 'Angola', "iata": 'CAB', "icao": 'FNCA', "lat": -5.5997, "lon": 12.1884, "alt": 66, "tz": 'Africa/Luanda'},
+    {"name": 'Lobito Airport', "city": 'Benguela', "country": 'Angola', "iata": 'BUG', "icao": 'FNBG', "lat": -12.6090, "lon": 13.4037, "alt": 20, "tz": 'Africa/Luanda'},
+    {"name": 'Malanje Airport', "city": 'Malanje', "country": 'Angola', "iata": 'MEG', "icao": 'FNMA', "lat": -9.5251, "lon": 16.3124, "alt": 3527, "tz": 'Africa/Luanda'},
+    {"name": 'Kuito Airport', "city": 'Kuito', "country": 'Angola', "iata": 'SVP', "icao": 'FNKU', "lat": -12.4046, "lon": 16.9474, "alt": 5587, "tz": 'Africa/Luanda'},
+    {"name": 'Namibe Airport', "city": 'Namibe', "country": 'Angola', "iata": 'MSZ', "icao": 'FNMO', "lat": -15.2612, "lon": 12.1468, "alt": 210, "tz": 'Africa/Luanda'},
+    {"name": 'Ondjiva Pereira Airport', "city": 'Ondjiva', "country": 'Angola', "iata": 'VPE', "icao": 'FNGI', "lat": -17.0435, "lon": 15.6848, "alt": 3566, "tz": 'Africa/Luanda'},
+    {"name": 'Uige Airport', "city": 'Uige', "country": 'Angola', "iata": 'UGO', "icao": 'FNUG', "lat": -7.6031, "lon": 15.0278, "alt": 2720, "tz": 'Africa/Luanda'},
+    {"name": 'Soyo Airport', "city": 'Soyo', "country": 'Angola', "iata": 'SZA', "icao": 'FNSO', "lat": -6.1411, "lon": 12.3718, "alt": 15, "tz": 'Africa/Luanda'},
+    {"name": 'Menongue Airport', "city": 'Menongue', "country": 'Angola', "iata": 'SPP', "icao": 'FNME', "lat": -14.6576, "lon": 17.7198, "alt": 3897, "tz": 'Africa/Luanda'},
+    {"name": 'Saurimo Airport', "city": 'Saurimo', "country": 'Angola', "iata": 'VHC', "icao": 'FNSA', "lat": -9.6890, "lon": 20.4319, "alt": 3584, "tz": 'Africa/Luanda'},
+    {"name": 'Luena Airport', "city": 'Luena', "country": 'Angola', "iata": 'LUO', "icao": 'FNUE', "lat": -11.7681, "lon": 19.8977, "alt": 4626, "tz": 'Africa/Luanda'},
+    {"name": 'N\'zeto Airport', "city": 'N\'zeto', "country": 'Angola', "iata": 'ARZ', "icao": 'FNZE', "lat": -7.2647, "lon": 12.8639, "alt": 98, "tz": 'Africa/Luanda'},
+
+    # ── Namibia ───────────────────────────────────────────────────────────────
+    {"name": 'Walvis Bay Airport', "city": 'Walvis Bay', "country": 'Namibia', "iata": 'WVB', "icao": 'FYWB', "lat": -22.9799, "lon": 14.6453, "alt": 299, "tz": 'Africa/Windhoek'},
+    {"name": 'Ondangwa Airport', "city": 'Ondangwa', "country": 'Namibia', "iata": 'OND', "icao": 'FYOA', "lat": -17.8782, "lon": 15.9526, "alt": 3599, "tz": 'Africa/Windhoek'},
+    {"name": 'Eros Airport', "city": 'Windhoek', "country": 'Namibia', "iata": 'ERS', "icao": 'FYWE', "lat": -22.6122, "lon": 17.0804, "alt": 5575, "tz": 'Africa/Windhoek'},
+    {"name": 'Rundu Airport', "city": 'Rundu', "country": 'Namibia', "iata": 'NDU', "icao": 'FYRU', "lat": -17.9565, "lon": 19.7194, "alt": 3627, "tz": 'Africa/Windhoek'},
+    {"name": 'Katima Mulilo Airport', "city": 'Katima Mulilo', "country": 'Namibia', "iata": 'MPA', "icao": 'FYKM', "lat": -17.6342, "lon": 24.1767, "alt": 3144, "tz": 'Africa/Windhoek'},
+    {"name": 'Luderitz Airport', "city": 'Luderitz', "country": 'Namibia', "iata": 'LUD', "icao": 'FYLZ', "lat": -26.6874, "lon": 15.2429, "alt": 457, "tz": 'Africa/Windhoek'},
+    {"name": 'Keetmanshoop Airport', "city": 'Keetmanshoop', "country": 'Namibia', "iata": 'KMP', "icao": 'FYKT', "lat": -26.5398, "lon": 18.1114, "alt": 3506, "tz": 'Africa/Windhoek'},
+    {"name": 'Mokuti Lodge Airport', "city": 'Tsumeb', "country": 'Namibia', "iata": 'OKU', "icao": 'FYMO', "lat": -18.8128, "lon": 17.0594, "alt": 3665, "tz": 'Africa/Windhoek'},
+    {"name": 'Lüderitz Airport', "city": 'Oranjemund', "country": 'Namibia', "iata": 'OMD', "icao": 'FYOG', "lat": -28.5849, "lon": 16.4467, "alt": 15, "tz": 'Africa/Windhoek'},
+    {"name": 'Swakopmund Airport', "city": 'Swakopmund', "country": 'Namibia', "iata": 'SWP', "icao": 'FYSM', "lat": -22.6619, "lon": 14.5681, "alt": 207, "tz": 'Africa/Windhoek'},
+
+    # ── Botswana ──────────────────────────────────────────────────────────────
+    {"name": 'Kasane Airport', "city": 'Kasane', "country": 'Botswana', "iata": 'BBK', "icao": 'FBKE', "lat": -17.8329, "lon": 25.1624, "alt": 3289, "tz": 'Africa/Gaborone'},
+    {"name": 'Maun Airport', "city": 'Maun', "country": 'Botswana', "iata": 'MUB', "icao": 'FBMN', "lat": -19.9726, "lon": 23.4312, "alt": 3093, "tz": 'Africa/Gaborone'},
+    {"name": 'Francistown Airport', "city": 'Francistown', "country": 'Botswana', "iata": 'FRW', "icao": 'FBFT', "lat": -21.1596, "lon": 27.4745, "alt": 3283, "tz": 'Africa/Gaborone'},
+    {"name": 'Selebi-Phikwe Airport', "city": 'Selebi-Phikwe', "country": 'Botswana', "iata": 'PKW', "icao": 'FBSP', "lat": -22.0583, "lon": 27.8288, "alt": 2926, "tz": 'Africa/Gaborone'},
+    {"name": 'Jwaneng Airport', "city": 'Jwaneng', "country": 'Botswana', "iata": 'JWA', "icao": 'FBJW', "lat": -24.6023, "lon": 24.6910, "alt": 3631, "tz": 'Africa/Gaborone'},
+    {"name": 'Shakawe Airport', "city": 'Shakawe', "country": 'Botswana', "iata": 'SWX', "icao": 'FBSW', "lat": -18.3739, "lon": 21.8326, "alt": 3379, "tz": 'Africa/Gaborone'},
+
+    # ── Burkina Faso ──────────────────────────────────────────────────────────
+    {"name": 'Bobo Dioulasso Airport', "city": 'Bobo-Dioulasso', "country": 'Burkina Faso', "iata": 'BOY', "icao": 'DFOO', "lat": 11.1601, "lon": -4.3310, "alt": 1511, "tz": 'Africa/Ouagadougou'},
+    {"name": 'Dedougou Airport', "city": 'Dedougou', "country": 'Burkina Faso', "iata": 'DGU', "icao": 'DFED', "lat": 12.4600, "lon": -3.4900, "alt": 984, "tz": 'Africa/Ouagadougou'},
+    {"name": 'Gaoua Airport', "city": 'Gaoua', "country": 'Burkina Faso', "iata": 'XGA', "icao": 'DFOG', "lat": 10.3836, "lon": -3.1800, "alt": 1099, "tz": 'Africa/Ouagadougou'},
+
+    # ── Cameroon ──────────────────────────────────────────────────────────────
+    {"name": 'Yaounde Nsimalen International Airport', "city": 'Yaounde', "country": 'Cameroon', "iata": 'NSI', "icao": 'FKYS', "lat": 3.7226, "lon": 11.5533, "alt": 2278, "tz": 'Africa/Douala'},
+    {"name": 'Garoua International Airport', "city": 'Garoua', "country": 'Cameroon', "iata": 'GOU', "icao": 'FKKG', "lat": 9.3359, "lon": 13.3701, "alt": 794, "tz": 'Africa/Douala'},
+    {"name": 'Maroua Salak Airport', "city": 'Maroua', "country": 'Cameroon', "iata": 'MVR', "icao": 'FKKR', "lat": 10.4514, "lon": 14.2574, "alt": 1390, "tz": 'Africa/Douala'},
+    {"name": 'Bafoussam Airport', "city": 'Bafoussam', "country": 'Cameroon', "iata": 'BFX', "icao": 'FKKU', "lat": 5.5369, "lon": 10.3546, "alt": 4347, "tz": 'Africa/Douala'},
+    {"name": 'Ngaoundere Airport', "city": 'Ngaoundere', "country": 'Cameroon', "iata": 'NGE', "icao": 'FKKN', "lat": 7.3579, "lon": 13.5592, "alt": 3655, "tz": 'Africa/Douala'},
+    {"name": 'Bertoua Airport', "city": 'Bertoua', "country": 'Cameroon', "iata": 'BTA', "icao": 'FKKO', "lat": 4.5486, "lon": 13.7260, "alt": 2133, "tz": 'Africa/Douala'},
+
+    # ── Chad ──────────────────────────────────────────────────────────────────
+    {"name": 'Abeche Airport', "city": 'Abeche', "country": 'Chad', "iata": 'AEH', "icao": 'FTTC', "lat": 13.8470, "lon": 20.8443, "alt": 1788, "tz": 'Africa/Ndjamena'},
+    {"name": 'Moundou Airport', "city": 'Moundou', "country": 'Chad', "iata": 'MQQ', "icao": 'FTTD', "lat": 8.6244, "lon": 16.0714, "alt": 1385, "tz": 'Africa/Ndjamena'},
+    {"name": 'Sarh Airport', "city": 'Sarh', "country": 'Chad', "iata": 'SRH', "icao": 'FTTA', "lat": 9.1445, "lon": 18.3744, "alt": 1197, "tz": 'Africa/Ndjamena'},
+    {"name": 'Faya Largeau Airport', "city": 'Faya-Largeau', "country": 'Chad', "iata": 'FYT', "icao": 'FTTY', "lat": 17.9171, "lon": 19.1111, "alt": 771, "tz": 'Africa/Ndjamena'},
+
+    # ── DR Congo ──────────────────────────────────────────────────────────────
+    {"name": 'Kisangani Bangoka International Airport', "city": 'Kisangani', "country": 'DR Congo', "iata": 'FKI', "icao": 'FZIC', "lat": 0.4817, "lon": 25.3380, "alt": 1417, "tz": 'Africa/Lubumbashi'},
+    {"name": 'Lubumbashi International Airport', "city": 'Lubumbashi', "country": 'DR Congo', "iata": 'FBM', "icao": 'FZQA', "lat": -11.5913, "lon": 27.5309, "alt": 4295, "tz": 'Africa/Lubumbashi'},
+    {"name": 'Mbuji-Mayi Airport', "city": 'Mbuji-Mayi', "country": 'DR Congo', "iata": 'MJM', "icao": 'FZWA', "lat": -6.1212, "lon": 23.5690, "alt": 2241, "tz": 'Africa/Lubumbashi'},
+    {"name": 'Kananga Airport', "city": 'Kananga', "country": 'DR Congo', "iata": 'KGA', "icao": 'FZUA', "lat": -5.9005, "lon": 22.4692, "alt": 2139, "tz": 'Africa/Kinshasa'},
+    {"name": 'Goma International Airport', "city": 'Goma', "country": 'DR Congo', "iata": 'GOM', "icao": 'FZNA', "lat": -1.6708, "lon": 29.2385, "alt": 5089, "tz": 'Africa/Lubumbashi'},
+    {"name": 'Bukavu Kavumu Airport', "city": 'Bukavu', "country": 'DR Congo', "iata": 'BKY', "icao": 'FZMA', "lat": -2.3089, "lon": 28.8088, "alt": 5643, "tz": 'Africa/Lubumbashi'},
+    {"name": 'Bunia Airport', "city": 'Bunia', "country": 'DR Congo', "iata": 'BUX', "icao": 'FZKA', "lat": 1.5658, "lon": 30.2208, "alt": 4045, "tz": 'Africa/Lubumbashi'},
+    {"name": 'Gbadolite Airport', "city": 'Gbadolite', "country": 'DR Congo', "iata": 'BDT', "icao": 'FZFD', "lat": 4.2533, "lon": 20.9753, "alt": 1509, "tz": 'Africa/Kinshasa'},
+    {"name": 'Kolwezi Airport', "city": 'Kolwezi', "country": 'DR Congo', "iata": 'KWZ', "icao": 'FZQM', "lat": -10.7659, "lon": 25.5057, "alt": 4921, "tz": 'Africa/Lubumbashi'},
+
+    # ── Gabon ─────────────────────────────────────────────────────────────────
+    {"name": 'Port Gentil Airport', "city": 'Port-Gentil', "country": 'Gabon', "iata": 'POG', "icao": 'FOOG', "lat": -0.7117, "lon": 8.7538, "alt": 13, "tz": 'Africa/Libreville'},
+    {"name": 'Franceville Mvengue Airport', "city": 'Franceville', "country": 'Gabon', "iata": 'MVB', "icao": 'FOON', "lat": -1.6562, "lon": 13.4380, "alt": 1450, "tz": 'Africa/Libreville'},
+    {"name": 'Oyem Airport', "city": 'Oyem', "country": 'Gabon', "iata": 'OYE', "icao": 'FOOY', "lat": 1.5431, "lon": 11.5814, "alt": 2158, "tz": 'Africa/Libreville'},
+    {"name": 'Lambarene Airport', "city": 'Lambarene', "country": 'Gabon', "iata": 'LBQ', "icao": 'FOLL', "lat": -0.7044, "lon": 10.2457, "alt": 82, "tz": 'Africa/Libreville'},
+
+    # ── Guinea ────────────────────────────────────────────────────────────────
+    {"name": 'Labe Airport', "city": 'Labe', "country": 'Guinea', "iata": 'LEK', "icao": 'GULB', "lat": 11.3261, "lon": -12.2868, "alt": 3396, "tz": 'Africa/Conakry'},
+    {"name": 'Nzerekore Airport', "city": 'Nzerekore', "country": 'Guinea', "iata": 'NZE', "icao": 'GUNZ', "lat": 7.8060, "lon": -8.7018, "alt": 1657, "tz": 'Africa/Conakry'},
+    {"name": 'Kankan Airport', "city": 'Kankan', "country": 'Guinea', "iata": 'KNN', "icao": 'GUXN', "lat": 10.4483, "lon": -9.4958, "alt": 1234, "tz": 'Africa/Conakry'},
+
+    # ── Kenya ─────────────────────────────────────────────────────────────────
+    {"name": 'Kisumu Airport', "city": 'Kisumu', "country": 'Kenya', "iata": 'KIS', "icao": 'HKKI', "lat": -0.0861, "lon": 34.7290, "alt": 3734, "tz": 'Africa/Nairobi'},
+    {"name": 'Eldoret International Airport', "city": 'Eldoret', "country": 'Kenya', "iata": 'EDL', "icao": 'HKEL', "lat": 0.4045, "lon": 35.2389, "alt": 6941, "tz": 'Africa/Nairobi'},
+    {"name": 'Malindi Airport', "city": 'Malindi', "country": 'Kenya', "iata": 'MYD', "icao": 'HKML', "lat": -3.2293, "lon": 40.1017, "alt": 80, "tz": 'Africa/Nairobi'},
+    {"name": 'Ukunda Diani Airport', "city": 'Ukunda', "country": 'Kenya', "iata": 'UKA', "icao": 'HKUK', "lat": -4.2983, "lon": 39.5681, "alt": 98, "tz": 'Africa/Nairobi'},
+    {"name": 'Lodwar Airport', "city": 'Lodwar', "country": 'Kenya', "iata": 'LOK', "icao": 'HKLO', "lat": 3.1219, "lon": 35.6087, "alt": 1715, "tz": 'Africa/Nairobi'},
+
+    # ── Malawi ────────────────────────────────────────────────────────────────
+    {"name": 'Chileka International Airport', "city": 'Blantyre', "country": 'Malawi', "iata": 'BLZ', "icao": 'FWCL', "lat": -15.6791, "lon": 34.9740, "alt": 2555, "tz": 'Africa/Blantyre'},
+    {"name": 'Mzuzu Airport', "city": 'Mzuzu', "country": 'Malawi', "iata": 'ZZU', "icao": 'FWUU', "lat": -11.4448, "lon": 34.0118, "alt": 4115, "tz": 'Africa/Blantyre'},
+    {"name": 'Club Makokola Airport', "city": 'Mangochi', "country": 'Malawi', "iata": 'CMK', "icao": 'FWCM', "lat": -14.3069, "lon": 35.1325, "alt": 1587, "tz": 'Africa/Blantyre'},
+
+    # ── Mali ──────────────────────────────────────────────────────────────────
+    {"name": 'Gao Airport', "city": 'Gao', "country": 'Mali', "iata": 'GAQ', "icao": 'GAGO', "lat": 16.2484, "lon": -0.0056, "alt": 869, "tz": 'Africa/Bamako'},
+    {"name": 'Timbuktu Airport', "city": 'Timbuktu', "country": 'Mali', "iata": 'TOM', "icao": 'GATB', "lat": 16.7305, "lon": -3.0076, "alt": 863, "tz": 'Africa/Bamako'},
+    {"name": 'Mopti Airport', "city": 'Mopti', "country": 'Mali', "iata": 'MZI', "icao": 'GAMB', "lat": 14.5128, "lon": -4.0796, "alt": 906, "tz": 'Africa/Bamako'},
+    {"name": 'Kayes Dag Dag Airport', "city": 'Kayes', "country": 'Mali', "iata": 'KYS', "icao": 'GAKY', "lat": 14.4812, "lon": -11.4044, "alt": 164, "tz": 'Africa/Bamako'},
+
+    # ── Mozambique ────────────────────────────────────────────────────────────
+    {"name": 'Beira Airport', "city": 'Beira', "country": 'Mozambique', "iata": 'BEW', "icao": 'FQBR', "lat": -19.7964, "lon": 34.9076, "alt": 33, "tz": 'Africa/Maputo'},
+    {"name": 'Nampula Airport', "city": 'Nampula', "country": 'Mozambique', "iata": 'APL', "icao": 'FQNP', "lat": -15.1056, "lon": 39.2818, "alt": 1444, "tz": 'Africa/Maputo'},
+    {"name": 'Nacala Airport', "city": 'Nacala', "country": 'Mozambique', "iata": 'MNC', "icao": 'FQNC', "lat": -14.4882, "lon": 40.6122, "alt": 410, "tz": 'Africa/Maputo'},
+    {"name": 'Pemba Airport', "city": 'Pemba', "country": 'Mozambique', "iata": 'POL', "icao": 'FQPB', "lat": -12.9918, "lon": 40.5242, "alt": 331, "tz": 'Africa/Maputo'},
+    {"name": 'Tete Chingozi Airport', "city": 'Tete', "country": 'Mozambique', "iata": 'TET', "icao": 'FQTT', "lat": -16.1048, "lon": 33.6402, "alt": 525, "tz": 'Africa/Maputo'},
+    {"name": 'Inhambane Airport', "city": 'Inhambane', "country": 'Mozambique', "iata": 'INH', "icao": 'FQIN', "lat": -23.8764, "lon": 35.4085, "alt": 30, "tz": 'Africa/Maputo'},
+    {"name": 'Quelimane Airport', "city": 'Quelimane', "country": 'Mozambique', "iata": 'UEL', "icao": 'FQQL', "lat": -17.8555, "lon": 36.8690, "alt": 36, "tz": 'Africa/Maputo'},
+    {"name": 'Lichinga Airport', "city": 'Lichinga', "country": 'Mozambique', "iata": 'VXC', "icao": 'FQLC', "lat": -13.2740, "lon": 35.2663, "alt": 4505, "tz": 'Africa/Maputo'},
+
+    # ── Rwanda ────────────────────────────────────────────────────────────────
+    {"name": 'Kamembe Airport', "city": 'Cyangugu', "country": 'Rwanda', "iata": 'KME', "icao": 'HRZA', "lat": -2.4622, "lon": 28.9079, "alt": 5192, "tz": 'Africa/Kigali'},
+    {"name": 'Gisenyi Airport', "city": 'Gisenyi', "country": 'Rwanda', "iata": 'GYI', "icao": 'HRYG', "lat": -1.6772, "lon": 29.2589, "alt": 5082, "tz": 'Africa/Kigali'},
+
+    # ── Senegal ───────────────────────────────────────────────────────────────
+    {"name": 'Cap Skirring Airport', "city": 'Cap Skirring', "country": 'Senegal', "iata": 'CSK', "icao": 'GOGS', "lat": 12.3953, "lon": -16.7481, "alt": 52, "tz": 'Africa/Dakar'},
+    {"name": 'Ziguinchor Airport', "city": 'Ziguinchor', "country": 'Senegal', "iata": 'ZIG', "icao": 'GOGG', "lat": 12.5556, "lon": -16.2818, "alt": 75, "tz": 'Africa/Dakar'},
+    {"name": 'Saint-Louis Airport', "city": 'Saint-Louis', "country": 'Senegal', "iata": 'XLS', "icao": 'GOSS', "lat": 16.0508, "lon": -16.4632, "alt": 9, "tz": 'Africa/Dakar'},
+    {"name": 'Tambacounda Airport', "city": 'Tambacounda', "country": 'Senegal', "iata": 'TUD', "icao": 'GOTT', "lat": 13.7368, "lon": -13.6531, "alt": 161, "tz": 'Africa/Dakar'},
+
+    # ── Somalia ───────────────────────────────────────────────────────────────
+    {"name": 'Hargeisa Egal International Airport', "city": 'Hargeisa', "country": 'Somalia', "iata": 'HGA', "icao": 'HCMH', "lat": 9.5183, "lon": 44.0888, "alt": 4423, "tz": 'Africa/Mogadishu'},
+    {"name": 'Berbera Airport', "city": 'Berbera', "country": 'Somalia', "iata": 'BBO', "icao": 'HCMI', "lat": 10.3892, "lon": 44.9411, "alt": 30, "tz": 'Africa/Mogadishu'},
+    {"name": 'Bossaso Airport', "city": 'Bossaso', "country": 'Somalia', "iata": 'BSY', "icao": 'HCMF', "lat": 11.2753, "lon": 49.1494, "alt": 6, "tz": 'Africa/Mogadishu'},
+    {"name": 'Galcaio Airport', "city": 'Galcaio', "country": 'Somalia', "iata": 'GLK', "icao": 'HCMR', "lat": 6.7808, "lon": 47.4545, "alt": 975, "tz": 'Africa/Mogadishu'},
+    {"name": 'Kismayo Airport', "city": 'Kismayo', "country": 'Somalia', "iata": 'KMU', "icao": 'HCMK', "lat": -0.3773, "lon": 42.4592, "alt": 49, "tz": 'Africa/Mogadishu'},
+
+    # ── Tanzania ──────────────────────────────────────────────────────────────
+    {"name": 'Mwanza Airport', "city": 'Mwanza', "country": 'Tanzania', "iata": 'MWZ', "icao": 'HTMW', "lat": -2.4445, "lon": 32.9327, "alt": 3763, "tz": 'Africa/Dar_es_Salaam'},
+    {"name": 'Dodoma Airport', "city": 'Dodoma', "country": 'Tanzania', "iata": 'DOD', "icao": 'HTDO', "lat": -6.1704, "lon": 35.7526, "alt": 3673, "tz": 'Africa/Dar_es_Salaam'},
+    {"name": 'Arusha Airport', "city": 'Arusha', "country": 'Tanzania', "iata": 'ARK', "icao": 'HTAR', "lat": -3.3678, "lon": 36.6333, "alt": 4550, "tz": 'Africa/Dar_es_Salaam'},
+    {"name": 'Mtwara Airport', "city": 'Mtwara', "country": 'Tanzania', "iata": 'MYW', "icao": 'HTMT', "lat": -10.3390, "lon": 40.1818, "alt": 371, "tz": 'Africa/Dar_es_Salaam'},
+    {"name": 'Tabora Airport', "city": 'Tabora', "country": 'Tanzania', "iata": 'TBO', "icao": 'HTTB', "lat": -5.0763, "lon": 32.8333, "alt": 3868, "tz": 'Africa/Dar_es_Salaam'},
+    {"name": 'Iringa Airport', "city": 'Iringa', "country": 'Tanzania', "iata": 'IRI', "icao": 'HTIR', "lat": -7.6686, "lon": 35.7521, "alt": 4678, "tz": 'Africa/Dar_es_Salaam'},
+
+    # ── Togo ──────────────────────────────────────────────────────────────────
+    {"name": 'Niamtougou International Airport', "city": 'Niamtougou', "country": 'Togo', "iata": 'LRL', "icao": 'DXNG', "lat": 9.7673, "lon": 1.0912, "alt": 1515, "tz": 'Africa/Lome'},
+
+    # ── Uganda ────────────────────────────────────────────────────────────────
+    {"name": 'Gulu Airport', "city": 'Gulu', "country": 'Uganda', "iata": 'ULU', "icao": 'HUGU', "lat": 2.8056, "lon": 32.2718, "alt": 3510, "tz": 'Africa/Kampala'},
+    {"name": 'Arua Airport', "city": 'Arua', "country": 'Uganda', "iata": 'RUA', "icao": 'HUAR', "lat": 3.0500, "lon": 30.9167, "alt": 3951, "tz": 'Africa/Kampala'},
+    {"name": 'Kasese Airport', "city": 'Kasese', "country": 'Uganda', "iata": 'KSE', "icao": 'HUKS', "lat": 0.1830, "lon": 30.1000, "alt": 3146, "tz": 'Africa/Kampala'},
+
+    # ── Cambodia ──────────────────────────────────────────────────────────────
+    {"name": 'Sihanoukville Airport', "city": 'Sihanoukville', "country": 'Cambodia', "iata": 'KOS', "icao": 'VDSV', "lat": 10.5797, "lon": 103.6368, "alt": 33, "tz": 'Asia/Phnom_Penh'},
+    {"name": 'Battambang Airport', "city": 'Battambang', "country": 'Cambodia', "iata": 'BBM', "icao": 'VDBG', "lat": 13.0956, "lon": 103.2239, "alt": 59, "tz": 'Asia/Phnom_Penh'},
+
+    # ── Georgia ───────────────────────────────────────────────────────────────
+    {"name": 'Batumi International Airport', "city": 'Batumi', "country": 'Georgia', "iata": 'BUS', "icao": 'UGSB', "lat": 41.6103, "lon": 41.5997, "alt": 105, "tz": 'Asia/Tbilisi'},
+    {"name": 'Kutaisi David the Builder International Airport', "city": 'Kutaisi', "country": 'Georgia', "iata": 'KUT', "icao": 'UGKO', "lat": 42.1767, "lon": 42.4826, "alt": 223, "tz": 'Asia/Tbilisi'},
+
+    # ── Israel ────────────────────────────────────────────────────────────────
+    {"name": 'Ramon International Airport', "city": 'Eilat', "country": 'Israel', "iata": 'ETM', "icao": 'LLER', "lat": 29.7237, "lon": 35.0114, "alt": 2316, "tz": 'Asia/Jerusalem'},
+    {"name": 'Haifa Airport', "city": 'Haifa', "country": 'Israel', "iata": 'HFA', "icao": 'LLHA', "lat": 32.8094, "lon": 35.0431, "alt": 28, "tz": 'Asia/Jerusalem'},
+
+    # ── Jordan ────────────────────────────────────────────────────────────────
+    {"name": 'King Hussein International Airport', "city": 'Aqaba', "country": 'Jordan', "iata": 'AQJ', "icao": 'OJAQ', "lat": 29.6116, "lon": 35.0181, "alt": 175, "tz": 'Asia/Amman'},
+    {"name": 'Mafraq Airport', "city": 'Mafraq', "country": 'Jordan', "iata": 'OMF', "icao": 'OJMF', "lat": 32.3564, "lon": 36.2592, "alt": 2231, "tz": 'Asia/Amman'},
+
+    # ── Kyrgyzstan ────────────────────────────────────────────────────────────
+    {"name": 'Jalal-Abad Airport', "city": 'Jalal-Abad', "country": 'Kyrgyzstan', "iata": 'DJA', "icao": 'UAFJ', "lat": 40.9346, "lon": 72.9945, "alt": 2568, "tz": 'Asia/Bishkek'},
+
+    # ── Maldives ──────────────────────────────────────────────────────────────
+    {"name": 'Hanimaadhoo Airport', "city": 'Hanimaadhoo', "country": 'Maldives', "iata": 'HAQ', "icao": 'VRMH', "lat": 6.7442, "lon": 73.1702, "alt": 4, "tz": 'Indian/Maldives'},
+    {"name": 'Gan Airport', "city": 'Addu Atoll', "country": 'Maldives', "iata": 'GAN', "icao": 'VRMG', "lat": -0.6933, "lon": 73.1556, "alt": 6, "tz": 'Indian/Maldives'},
+    {"name": 'Kaadedhdhoo Airport', "city": 'Gaaf Dhaal Atoll', "country": 'Maldives', "iata": 'KDO', "icao": 'VRMT', "lat": 0.4881, "lon": 72.9967, "alt": 4, "tz": 'Indian/Maldives'},
+
+    # ── Oman ──────────────────────────────────────────────────────────────────
+    {"name": 'Sohar Airport', "city": 'Sohar', "country": 'Oman', "iata": 'OHS', "icao": 'OOSH', "lat": 24.3860, "lon": 56.6254, "alt": 20, "tz": 'Asia/Muscat'},
+    {"name": 'Duqm Airport', "city": 'Duqm', "country": 'Oman', "iata": 'DQM', "icao": 'OODQ', "lat": 19.5019, "lon": 57.6342, "alt": 301, "tz": 'Asia/Muscat'},
+    {"name": 'Ras Al Hadd Airport', "city": 'Ras Al Hadd', "country": 'Oman', "iata": 'RNM', "icao": 'OORH', "lat": 22.5344, "lon": 59.8044, "alt": 82, "tz": 'Asia/Muscat'},
+    {"name": 'Khasab Airport', "city": 'Khasab', "country": 'Oman', "iata": 'KHS', "icao": 'OOKB', "lat": 26.1710, "lon": 56.2406, "alt": 100, "tz": 'Asia/Muscat'},
+    {"name": 'Adam Airport', "city": 'Adam', "country": 'Oman', "iata": 'AOM', "icao": 'OOAD', "lat": 22.5058, "lon": 57.7839, "alt": 1041, "tz": 'Asia/Muscat'},
+
+    # ── Saudi Arabia ──────────────────────────────────────────────────────────
+    {"name": 'King Fahd International Airport', "city": 'Dammam', "country": 'Saudi Arabia', "iata": 'DMM', "icao": 'OEDF', "lat": 26.4712, "lon": 49.7979, "alt": 72, "tz": 'Asia/Riyadh'},
+    {"name": 'Prince Mohammad Bin Abdulaziz Airport', "city": 'Medina', "country": 'Saudi Arabia', "iata": 'MED', "icao": 'OEMA', "lat": 24.5534, "lon": 39.7052, "alt": 2151, "tz": 'Asia/Riyadh'},
+    {"name": 'Tabuk Airport', "city": 'Tabuk', "country": 'Saudi Arabia', "iata": 'TUU', "icao": 'OETB', "lat": 28.3654, "lon": 36.6189, "alt": 2551, "tz": 'Asia/Riyadh'},
+    {"name": 'Al Ahsa Airport', "city": 'Al-Ahsa', "country": 'Saudi Arabia', "iata": 'HOF', "icao": 'OEAH', "lat": 25.2853, "lon": 49.4852, "alt": 588, "tz": 'Asia/Riyadh'},
+    {"name": 'Abha Regional Airport', "city": 'Abha', "country": 'Saudi Arabia', "iata": 'AHB', "icao": 'OEAB', "lat": 18.2404, "lon": 42.6566, "alt": 6858, "tz": 'Asia/Riyadh'},
+    {"name": 'Gizan Regional Airport', "city": 'Jizan', "country": 'Saudi Arabia', "iata": 'GIZ', "icao": 'OEGN', "lat": 16.9011, "lon": 42.5858, "alt": 20, "tz": 'Asia/Riyadh'},
+    {"name": 'Hail Regional Airport', "city": 'Hail', "country": 'Saudi Arabia', "iata": 'HAS', "icao": 'OEHL', "lat": 27.4379, "lon": 41.6863, "alt": 3331, "tz": 'Asia/Riyadh'},
+    {"name": 'Najran Airport', "city": 'Najran', "country": 'Saudi Arabia', "iata": 'EAM', "icao": 'OENG', "lat": 17.6114, "lon": 44.4192, "alt": 3982, "tz": 'Asia/Riyadh'},
+    {"name": 'Yanbu Airport', "city": 'Yanbu', "country": 'Saudi Arabia', "iata": 'YNB', "icao": 'OEYN', "lat": 24.1442, "lon": 38.0634, "alt": 26, "tz": 'Asia/Riyadh'},
+    {"name": 'Al-Jawf Domestic Airport', "city": 'Al-Jawf', "country": 'Saudi Arabia', "iata": 'AJF', "icao": 'OESK', "lat": 29.7851, "lon": 40.0996, "alt": 2261, "tz": 'Asia/Riyadh'},
+    {"name": 'Arar Domestic Airport', "city": 'Arar', "country": 'Saudi Arabia', "iata": 'RAE', "icao": 'OERR', "lat": 30.9066, "lon": 41.1382, "alt": 1813, "tz": 'Asia/Riyadh'},
+    {"name": 'Bisha Airport', "city": 'Bisha', "country": 'Saudi Arabia', "iata": 'BHH', "icao": 'OEBH', "lat": 19.9844, "lon": 42.6209, "alt": 3887, "tz": 'Asia/Riyadh'},
+    {"name": 'Qassim Airport', "city": 'Buraidah', "country": 'Saudi Arabia', "iata": 'ELQ', "icao": 'OEGS', "lat": 26.3025, "lon": 43.7744, "alt": 2126, "tz": 'Asia/Riyadh'},
+    {"name": 'Taif Regional Airport', "city": 'Taif', "country": 'Saudi Arabia', "iata": 'TIF', "icao": 'OETF', "lat": 21.4834, "lon": 40.5443, "alt": 4848, "tz": 'Asia/Riyadh'},
+
+    # ── Syria ─────────────────────────────────────────────────────────────────
+    {"name": 'Aleppo International Airport', "city": 'Aleppo', "country": 'Syria', "iata": 'ALP', "icao": 'OSAP', "lat": 36.1807, "lon": 37.2244, "alt": 1276, "tz": 'Asia/Damascus'},
+    {"name": 'Latakia Bassel Al-Assad Airport', "city": 'Latakia', "country": 'Syria', "iata": 'LTK', "icao": 'OSLK', "lat": 35.4011, "lon": 35.9487, "alt": 157, "tz": 'Asia/Damascus'},
+    {"name": 'Deir ez-Zor Airport', "city": 'Deir ez-Zor', "country": 'Syria', "iata": 'DEZ', "icao": 'OSDZ', "lat": 35.2854, "lon": 40.1760, "alt": 700, "tz": 'Asia/Damascus'},
+    {"name": 'Qamishli Airport', "city": 'Qamishli', "country": 'Syria', "iata": 'KAC', "icao": 'OSKL', "lat": 37.0206, "lon": 41.1914, "alt": 1480, "tz": 'Asia/Damascus'},
+
+    # ── Vietnam ───────────────────────────────────────────────────────────────
+    {"name": 'Phu Bai International Airport', "city": 'Hue', "country": 'Vietnam', "iata": 'HUI', "icao": 'VVPB', "lat": 16.4015, "lon": 107.7026, "alt": 48, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Vinh Airport', "city": 'Vinh', "country": 'Vietnam', "iata": 'VII', "icao": 'VVVH', "lat": 18.7376, "lon": 105.6708, "alt": 23, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Dong Hoi Airport', "city": 'Dong Hoi', "country": 'Vietnam', "iata": 'VDH', "icao": 'VVDH', "lat": 17.5151, "lon": 106.5906, "alt": 59, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Rach Gia Airport', "city": 'Rach Gia', "country": 'Vietnam', "iata": 'VKG', "icao": 'VVRG', "lat": 9.9580, "lon": 105.1324, "alt": 7, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Pleiku Airport', "city": 'Pleiku', "country": 'Vietnam', "iata": 'PXU', "icao": 'VVPK', "lat": 14.0045, "lon": 108.0169, "alt": 2434, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Buon Ma Thuot Airport', "city": 'Buon Ma Thuot', "country": 'Vietnam', "iata": 'BMV', "icao": 'VVBM', "lat": 12.6683, "lon": 108.1200, "alt": 1729, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Ca Mau Airport', "city": 'Ca Mau', "country": 'Vietnam', "iata": 'CAH', "icao": 'VVCM', "lat": 9.1778, "lon": 105.1778, "alt": 6, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Tuy Hoa Airport', "city": 'Tuy Hoa', "country": 'Vietnam', "iata": 'TBB', "icao": 'VVTH', "lat": 13.0496, "lon": 109.3337, "alt": 20, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Qui Nhon Airport', "city": 'Qui Nhon', "country": 'Vietnam', "iata": 'UIH', "icao": 'VVPC', "lat": 13.9555, "lon": 109.0422, "alt": 20, "tz": 'Asia/Ho_Chi_Minh'},
+    {"name": 'Con Dao Airport', "city": 'Con Dao', "country": 'Vietnam', "iata": 'VCS', "icao": 'VVCS', "lat": 8.7318, "lon": 106.6330, "alt": 20, "tz": 'Asia/Ho_Chi_Minh'},
+
+    # ── Yemen ─────────────────────────────────────────────────────────────────
+    {"name": 'Taiz International Airport', "city": 'Taiz', "country": 'Yemen', "iata": 'TAI', "icao": 'OYTZ', "lat": 13.6860, "lon": 44.1391, "alt": 4562, "tz": 'Asia/Aden'},
+    {"name": 'Al Hudaydah Airport', "city": 'Hodeidah', "country": 'Yemen', "iata": 'HOD', "icao": 'OYHD', "lat": 14.7530, "lon": 42.9763, "alt": 41, "tz": 'Asia/Aden'},
+    {"name": 'Mukalla Riyan Airport', "city": 'Mukalla', "country": 'Yemen', "iata": 'RIY', "icao": 'OYRN', "lat": 14.6626, "lon": 49.3750, "alt": 54, "tz": 'Asia/Aden'},
+    {"name": 'Seiyun Airport', "city": 'Seiyun', "country": 'Yemen', "iata": 'GXF', "icao": 'OYSY', "lat": 15.9661, "lon": 48.7883, "alt": 2097, "tz": 'Asia/Aden'},
+    {"name": 'Socotra Airport', "city": 'Hadibo', "country": 'Yemen', "iata": 'SCT', "icao": 'OYSQ', "lat": 12.6307, "lon": 53.9058, "alt": 146, "tz": 'Asia/Aden'},
+
+    # ── Bolivia ───────────────────────────────────────────────────────────────
+    {"name": 'El Alto International Airport', "city": 'La Paz', "country": 'Bolivia', "iata": 'LPB', "icao": 'SLLP', "lat": -16.5133, "lon": -68.1922, "alt": 13313, "tz": 'America/La_Paz'},
+    {"name": 'Cochabamba Jorge Wilstermann Airport', "city": 'Cochabamba', "country": 'Bolivia', "iata": 'CBB', "icao": 'SLCB', "lat": -17.4211, "lon": -66.1771, "alt": 8360, "tz": 'America/La_Paz'},
+    {"name": 'Trinidad Airport', "city": 'Trinidad', "country": 'Bolivia', "iata": 'TDD', "icao": 'SLTR', "lat": -14.8187, "lon": -64.9180, "alt": 509, "tz": 'America/La_Paz'},
+    {"name": 'Sucre Alcantari Airport', "city": 'Sucre', "country": 'Bolivia', "iata": 'SRE', "icao": 'SLAL', "lat": -19.2471, "lon": -65.1447, "alt": 9534, "tz": 'America/La_Paz'},
+    {"name": 'Tarija Airport', "city": 'Tarija', "country": 'Bolivia', "iata": 'TJA', "icao": 'SLTJ', "lat": -21.5557, "lon": -64.7013, "alt": 6079, "tz": 'America/La_Paz'},
+    {"name": 'Oruro Juan Mendoza Airport', "city": 'Oruro', "country": 'Bolivia', "iata": 'ORU', "icao": 'SLOR', "lat": -17.9626, "lon": -67.0763, "alt": 12152, "tz": 'America/La_Paz'},
+    {"name": 'Potosi Airport', "city": 'Potosi', "country": 'Bolivia', "iata": 'POI', "icao": 'SLPO', "lat": -19.5433, "lon": -65.7237, "alt": 12913, "tz": 'America/La_Paz'},
+    {"name": 'Cobija Airport', "city": 'Cobija', "country": 'Bolivia', "iata": 'CIJ', "icao": 'SLCO', "lat": -11.0404, "lon": -68.7830, "alt": 889, "tz": 'America/La_Paz'},
+
+    # ── Dominican Republic ────────────────────────────────────────────────────
+    {"name": 'Las Americas International Airport', "city": 'Santo Domingo', "country": 'Dominican Republic', "iata": 'SDQ', "icao": 'MDSD', "lat": 18.4297, "lon": -69.6689, "alt": 59, "tz": 'America/Santo_Domingo'},
+    {"name": 'Cibao International Airport', "city": 'Santiago', "country": 'Dominican Republic', "iata": 'STI', "icao": 'MDST', "lat": 19.4061, "lon": -70.6047, "alt": 565, "tz": 'America/Santo_Domingo'},
+    {"name": 'La Romana International Airport', "city": 'La Romana', "country": 'Dominican Republic', "iata": 'LRM', "icao": 'MDLR', "lat": 18.4507, "lon": -68.9119, "alt": 18, "tz": 'America/Santo_Domingo'},
+    {"name": 'El Catey International Airport', "city": 'Samana', "country": 'Dominican Republic', "iata": 'AZS', "icao": 'MDCY', "lat": 19.2670, "lon": -69.7420, "alt": 30, "tz": 'America/Santo_Domingo'},
+    {"name": 'Puerto Plata Gregorio Luperon Airport', "city": 'Puerto Plata', "country": 'Dominican Republic', "iata": 'POP', "icao": 'MDPP', "lat": 19.7579, "lon": -70.5700, "alt": 15, "tz": 'America/Santo_Domingo'},
+
+    # ── El Salvador ───────────────────────────────────────────────────────────
+
+    # ── Guatemala ─────────────────────────────────────────────────────────────
+    {"name": 'Mundo Maya International Airport', "city": 'Flores', "country": 'Guatemala', "iata": 'FRS', "icao": 'MGFL', "lat": 16.9138, "lon": -89.8664, "alt": 427, "tz": 'America/Guatemala'},
+    {"name": 'Quetzaltenango Airport', "city": 'Quetzaltenango', "country": 'Guatemala', "iata": 'AAZ', "icao": 'MGQZ', "lat": 14.8656, "lon": -91.5020, "alt": 7779, "tz": 'America/Guatemala'},
+
+    # ── Honduras ──────────────────────────────────────────────────────────────
+    {"name": 'Ramon Villeda Morales Airport', "city": 'San Pedro Sula', "country": 'Honduras', "iata": 'SAP', "icao": 'MHLM', "lat": 15.4526, "lon": -87.9236, "alt": 91, "tz": 'America/Tegucigalpa'},
+    {"name": 'Juan Manuel Galvez Airport', "city": 'Roatan', "country": 'Honduras', "iata": 'RTB', "icao": 'MHRO', "lat": 16.3168, "lon": -86.5230, "alt": 39, "tz": 'America/Tegucigalpa'},
+    {"name": 'Goloson International Airport', "city": 'La Ceiba', "country": 'Honduras', "iata": 'LCE', "icao": 'MHLC', "lat": 15.7425, "lon": -86.8530, "alt": 39, "tz": 'America/Tegucigalpa'},
+
+    # ── Nicaragua ─────────────────────────────────────────────────────────────
+    {"name": 'Bluefields Airport', "city": 'Bluefields', "country": 'Nicaragua', "iata": 'BEF', "icao": 'MNBL', "lat": 11.9910, "lon": -83.7741, "alt": 20, "tz": 'America/Managua'},
+    {"name": 'Corn Island Airport', "city": 'Corn Island', "country": 'Nicaragua', "iata": 'RNI', "icao": 'MNCI', "lat": 12.1629, "lon": -83.0638, "alt": 1, "tz": 'America/Managua'},
+
+    # ── Paraguay ──────────────────────────────────────────────────────────────
+    {"name": 'Ciudad del Este Airport', "city": 'Ciudad del Este', "country": 'Paraguay', "iata": 'AGT', "icao": 'SGES', "lat": -25.4555, "lon": -54.8435, "alt": 846, "tz": 'America/Asuncion'},
+    {"name": 'Mariscal Estigarribia Airport', "city": 'Mariscal Estigarribia', "country": 'Paraguay', "iata": 'ESG', "icao": 'SGME', "lat": -22.0497, "lon": -60.6200, "alt": 669, "tz": 'America/Asuncion'},
+
+    # ── Peru ──────────────────────────────────────────────────────────────────
+    {"name": 'Alejandro Velasco Astete Airport', "city": 'Cusco', "country": 'Peru', "iata": 'CUZ', "icao": 'SPZO', "lat": -13.5357, "lon": -71.9388, "alt": 10860, "tz": 'America/Lima'},
+    {"name": 'Rodriguez Ballon International Airport', "city": 'Arequipa', "country": 'Peru', "iata": 'AQP', "icao": 'SPQU', "lat": -16.3411, "lon": -71.5830, "alt": 8405, "tz": 'America/Lima'},
+    {"name": 'Coronel FAP Francisco Secada Vignetta Airport', "city": 'Iquitos', "country": 'Peru', "iata": 'IQT', "icao": 'SPQT', "lat": -3.7847, "lon": -73.3088, "alt": 306, "tz": 'America/Lima'},
+    {"name": 'Carlos Martinez De Pinillos Airport', "city": 'Trujillo', "country": 'Peru', "iata": 'TRU', "icao": 'SPRU', "lat": -8.0814, "lon": -79.1088, "alt": 106, "tz": 'America/Lima'},
+    {"name": 'Capitan FAP Pedro Canga Rodriguez Airport', "city": 'Tumbes', "country": 'Peru', "iata": 'TBP', "icao": 'SPME', "lat": -3.5525, "lon": -80.3814, "alt": 115, "tz": 'America/Lima'},
+    {"name": 'Inca Manco Capac International Airport', "city": 'Juliaca', "country": 'Peru', "iata": 'JUL', "icao": 'SPJL', "lat": -15.4671, "lon": -70.1582, "alt": 12552, "tz": 'America/Lima'},
+    {"name": 'Alfredo Mendivil Duarte Airport', "city": 'Ayacucho', "country": 'Peru', "iata": 'AYP', "icao": 'SPHO', "lat": -13.1548, "lon": -74.2044, "alt": 8917, "tz": 'America/Lima'},
+    {"name": 'Capitan David Abensur Rengifo Airport', "city": 'Pucallpa', "country": 'Peru', "iata": 'PCL', "icao": 'SPCL', "lat": -8.3779, "lon": -74.5743, "alt": 513, "tz": 'America/Lima'},
+    {"name": 'Juanjui Airport', "city": 'Juanjui', "country": 'Peru', "iata": 'JJI', "icao": 'SPJI', "lat": -7.1691, "lon": -76.7286, "alt": 1148, "tz": 'America/Lima'},
+    {"name": 'Capitan Guillermo Concha Iberico Airport', "city": 'Piura', "country": 'Peru', "iata": 'PIU', "icao": 'SPUR', "lat": -5.2057, "lon": -80.6164, "alt": 120, "tz": 'America/Lima'},
+
+    # ── Uruguay ───────────────────────────────────────────────────────────────
+    {"name": 'Punta del Este Airport', "city": 'Punta del Este', "country": 'Uruguay', "iata": 'PDP', "icao": 'SUPE', "lat": -34.8551, "lon": -55.0942, "alt": 95, "tz": 'America/Montevideo'},
+    {"name": 'Colonia Airport', "city": 'Colonia del Sacramento', "country": 'Uruguay', "iata": 'CYR', "icao": 'SUCA', "lat": -34.4564, "lon": -57.7706, "alt": 69, "tz": 'America/Montevideo'},
+    {"name": 'Salto Airport', "city": 'Salto', "country": 'Uruguay', "iata": 'STY', "icao": 'SUSO', "lat": -31.4385, "lon": -57.9853, "alt": 187, "tz": 'America/Montevideo'},
+
+    # ── Argentina (expanded) ──────────────────────────────────────────────────
+    {"name": 'Comodoro Rivadavia Airport', "city": 'Comodoro Rivadavia', "country": 'Argentina', "iata": 'CRD', "icao": 'SAVC', "lat": -45.7853, "lon": -67.4656, "alt": 189, "tz": 'America/Argentina/Catamarca'},
+    {"name": 'Rosario Islas Malvinas Airport', "city": 'Rosario', "country": 'Argentina', "iata": 'ROS', "icao": 'SAAR', "lat": -32.9032, "lon": -60.7850, "alt": 85, "tz": 'America/Argentina/Cordoba'},
+    {"name": 'Neuquen Airport', "city": 'Neuquen', "country": 'Argentina', "iata": 'NQN', "icao": 'SAZN', "lat": -38.9490, "lon": -68.1557, "alt": 896, "tz": 'America/Argentina/Salta'},
+    {"name": 'Ushuaia Malvinas Argentinas Airport', "city": 'Ushuaia', "country": 'Argentina', "iata": 'USH', "icao": 'SAWH', "lat": -54.8433, "lon": -68.2958, "alt": 102, "tz": 'America/Argentina/Ushuaia'},
+    {"name": 'Rio Gallegos Airport', "city": 'Rio Gallegos', "country": 'Argentina', "iata": 'RGL', "icao": 'SAWG', "lat": -51.6089, "lon": -69.3126, "alt": 61, "tz": 'America/Argentina/Rio_Gallegos'},
+    {"name": 'Santa Rosa Airport', "city": 'Santa Rosa', "country": 'Argentina', "iata": 'RSA', "icao": 'SAZR', "lat": -36.5883, "lon": -64.2757, "alt": 630, "tz": 'America/Argentina/Salta'},
+    {"name": 'Resistencia Airport', "city": 'Resistencia', "country": 'Argentina', "iata": 'RES', "icao": 'SARE', "lat": -27.4500, "lon": -59.0561, "alt": 173, "tz": 'America/Argentina/Cordoba'},
+    {"name": 'Corrientes Airport', "city": 'Corrientes', "country": 'Argentina', "iata": 'CNQ', "icao": 'SARC', "lat": -27.4455, "lon": -58.7619, "alt": 202, "tz": 'America/Argentina/Cordoba'},
+    {"name": 'Posadas Airport', "city": 'Posadas', "country": 'Argentina', "iata": 'PSS', "icao": 'SARP', "lat": -27.3858, "lon": -55.9707, "alt": 430, "tz": 'America/Argentina/Cordoba'},
+
+    # ── Australia (expanded) ──────────────────────────────────────────────────
+    {"name": 'Gold Coast Airport', "city": 'Gold Coast', "country": 'Australia', "iata": 'OOL', "icao": 'YBCG', "lat": -28.1644, "lon": 153.5050, "alt": 21, "tz": 'Australia/Brisbane'},
+    {"name": 'Canberra Airport', "city": 'Canberra', "country": 'Australia', "iata": 'CBR', "icao": 'YSCB', "lat": -35.3069, "lon": 149.1950, "alt": 1886, "tz": 'Australia/Sydney'},
+    {"name": 'Newcastle Airport', "city": 'Newcastle', "country": 'Australia', "iata": 'NTL', "icao": 'YWLM', "lat": -32.7950, "lon": 151.8342, "alt": 31, "tz": 'Australia/Sydney'},
+    {"name": 'Sunshine Coast Airport', "city": 'Sunshine Coast', "country": 'Australia', "iata": 'MCY', "icao": 'YBMC', "lat": -26.6033, "lon": 153.0850, "alt": 15, "tz": 'Australia/Brisbane'},
+    {"name": 'Launceston Airport', "city": 'Launceston', "country": 'Australia', "iata": 'LST', "icao": 'YMLT', "lat": -41.5453, "lon": 147.2142, "alt": 562, "tz": 'Australia/Hobart'},
+    {"name": 'Mackay Airport', "city": 'Mackay', "country": 'Australia', "iata": 'MKY', "icao": 'YBMK', "lat": -21.1717, "lon": 149.1797, "alt": 19, "tz": 'Australia/Brisbane'},
+    {"name": 'Rockhampton Airport', "city": 'Rockhampton', "country": 'Australia', "iata": 'ROK', "icao": 'YBRK', "lat": -23.3819, "lon": 150.4753, "alt": 34, "tz": 'Australia/Brisbane'},
+    {"name": 'Proserpine Whitsunday Coast Airport', "city": 'Proserpine', "country": 'Australia', "iata": 'PPP', "icao": 'YBPN', "lat": -20.4950, "lon": 148.5522, "alt": 82, "tz": 'Australia/Brisbane'},
+    {"name": 'Hamilton Island Airport', "city": 'Hamilton Island', "country": 'Australia', "iata": 'HTI', "icao": 'YBHM', "lat": -20.3581, "lon": 148.9517, "alt": 15, "tz": 'Australia/Brisbane'},
+    {"name": 'Hervey Bay Airport', "city": 'Hervey Bay', "country": 'Australia', "iata": 'HVB', "icao": 'YHBA', "lat": -25.3189, "lon": 152.8803, "alt": 60, "tz": 'Australia/Brisbane'},
+    {"name": 'Port Hedland Airport', "city": 'Port Hedland', "country": 'Australia', "iata": 'PHE', "icao": 'YPPD', "lat": -20.3778, "lon": 118.6256, "alt": 33, "tz": 'Australia/Perth'},
+
+    # ── Chile (expanded) ──────────────────────────────────────────────────────
+    {"name": 'El Tepual Airport', "city": 'Puerto Montt', "country": 'Chile', "iata": 'PMC', "icao": 'SCTE', "lat": -41.4389, "lon": -73.0940, "alt": 294, "tz": 'America/Santiago'},
+    {"name": 'Carlos Ibanez Del Campo Airport', "city": 'Punta Arenas', "country": 'Chile', "iata": 'PUQ', "icao": 'SCCI', "lat": -53.0026, "lon": -70.8549, "alt": 139, "tz": 'America/Punta_Arenas'},
+    {"name": 'Diego Aracena Airport', "city": 'Iquique', "country": 'Chile', "iata": 'IQQ', "icao": 'SCDA', "lat": -20.5352, "lon": -70.1813, "alt": 155, "tz": 'America/Santiago'},
+    {"name": 'El Loa Airport', "city": 'Calama', "country": 'Chile', "iata": 'CJC', "icao": 'SCCF', "lat": -22.4982, "lon": -68.9036, "alt": 7543, "tz": 'America/Santiago'},
+    {"name": 'La Florida Airport', "city": 'La Serena', "country": 'Chile', "iata": 'LSC', "icao": 'SCSE', "lat": -29.9162, "lon": -71.1995, "alt": 481, "tz": 'America/Santiago'},
+    {"name": 'Balmaceda Airport', "city": 'Balmaceda', "country": 'Chile', "iata": 'BBA', "icao": 'SCBA', "lat": -45.9161, "lon": -71.6895, "alt": 1722, "tz": 'America/Santiago'},
+    {"name": 'Cerro Moreno Airport', "city": 'Antofagasta', "country": 'Chile', "iata": 'ANF', "icao": 'SCFA', "lat": -23.4445, "lon": -70.4451, "alt": 455, "tz": 'America/Santiago'},
+    {"name": 'Mataveri International Airport', "city": 'Easter Island', "country": 'Chile', "iata": 'IPC', "icao": 'SCIP', "lat": -27.1648, "lon": -109.4217, "alt": 227, "tz": 'Pacific/Easter'},
+
+    # ── Colombia (expanded) ───────────────────────────────────────────────────
+    {"name": 'Ernesto Cortissoz International Airport', "city": 'Barranquilla', "country": 'Colombia', "iata": 'BAQ', "icao": 'SKBQ', "lat": 10.8896, "lon": -74.7808, "alt": 98, "tz": 'America/Bogota'},
+    {"name": 'Gustavo Artunduaga Paredes Airport', "city": 'Florencia', "country": 'Colombia', "iata": 'FLA', "icao": 'SKFL', "lat": 1.5892, "lon": -75.5644, "alt": 803, "tz": 'America/Bogota'},
+    {"name": 'Palonegro International Airport', "city": 'Bucaramanga', "country": 'Colombia', "iata": 'BGA', "icao": 'SKBG', "lat": 7.1265, "lon": -73.1848, "alt": 3897, "tz": 'America/Bogota'},
+    {"name": 'Almirante Padilla Airport', "city": 'Riohacha', "country": 'Colombia', "iata": 'RCH', "icao": 'SKRH', "lat": 11.5262, "lon": -72.9260, "alt": 43, "tz": 'America/Bogota'},
+    {"name": 'Alfredo Vasquez Cobo Airport', "city": 'Leticia', "country": 'Colombia', "iata": 'LET', "icao": 'SKLT', "lat": -4.1932, "lon": -69.9432, "alt": 277, "tz": 'America/Bogota'},
+    {"name": 'Camilo Daza International Airport', "city": 'Cucuta', "country": 'Colombia', "iata": 'CUC', "icao": 'SKCC', "lat": 7.9276, "lon": -72.5115, "alt": 1096, "tz": 'America/Bogota'},
+
+    # ── Ecuador (expanded) ────────────────────────────────────────────────────
+    {"name": 'Cuenca Mariscal Lamar Airport', "city": 'Cuenca', "country": 'Ecuador', "iata": 'CUE', "icao": 'SECU', "lat": -2.8895, "lon": -79.0120, "alt": 8306, "tz": 'America/Guayaquil'},
+    {"name": 'Lago Agrio Airport', "city": 'Nueva Loja', "country": 'Ecuador', "iata": 'NTN', "icao": 'SENL', "lat": 0.0930, "lon": -76.8675, "alt": 980, "tz": 'America/Guayaquil'},
+    {"name": 'Seymour Airport', "city": 'Galapagos', "country": 'Ecuador', "iata": 'GPS', "icao": 'SEGS', "lat": -0.4538, "lon": -90.2659, "alt": 207, "tz": 'Pacific/Galapagos'},
+    {"name": 'General Manuel Serrano Airport', "city": 'Machala', "country": 'Ecuador', "iata": 'MCH', "icao": 'SEMH', "lat": -3.2689, "lon": -79.9615, "alt": 11, "tz": 'America/Guayaquil'},
+
+    # ── Thailand (expanded) ───────────────────────────────────────────────────
+    {"name": 'Udon Thani Airport', "city": 'Udon Thani', "country": 'Thailand', "iata": 'UTH', "icao": 'VTUD', "lat": 17.3864, "lon": 102.7883, "alt": 579, "tz": 'Asia/Bangkok'},
+    {"name": 'Ubon Ratchathani Airport', "city": 'Ubon Ratchathani', "country": 'Thailand', "iata": 'UBP', "icao": 'VTUU', "lat": 15.2513, "lon": 104.8701, "alt": 406, "tz": 'Asia/Bangkok'},
+    {"name": 'Khon Kaen Airport', "city": 'Khon Kaen', "country": 'Thailand', "iata": 'KKC', "icao": 'VTUK', "lat": 16.4666, "lon": 102.7836, "alt": 670, "tz": 'Asia/Bangkok'},
+    {"name": 'Nakhon Ratchasima Airport', "city": 'Nakhon Ratchasima', "country": 'Thailand', "iata": 'NAK', "icao": 'VTUQ', "lat": 14.9495, "lon": 102.3129, "alt": 765, "tz": 'Asia/Bangkok'},
+    {"name": 'Samui Airport', "city": 'Ko Samui', "country": 'Thailand', "iata": 'USM', "icao": 'VTSM', "lat": 9.5478, "lon": 100.0625, "alt": 64, "tz": 'Asia/Bangkok'},
+    {"name": 'Krabi Airport', "city": 'Krabi', "country": 'Thailand', "iata": 'KBV', "icao": 'VTSG', "lat": 8.0992, "lon": 98.9861, "alt": 98, "tz": 'Asia/Bangkok'},
+    {"name": 'Surat Thani Airport', "city": 'Surat Thani', "country": 'Thailand', "iata": 'URT', "icao": 'VTSB', "lat": 9.1358, "lon": 99.1356, "alt": 20, "tz": 'Asia/Bangkok'},
+    {"name": 'Hua Hin Airport', "city": 'Hua Hin', "country": 'Thailand', "iata": 'HHQ', "icao": 'VTPH', "lat": 12.6362, "lon": 99.9515, "alt": 62, "tz": 'Asia/Bangkok'},
+    {"name": 'Trang Airport', "city": 'Trang', "country": 'Thailand', "iata": 'TST', "icao": 'VTST', "lat": 7.5088, "lon": 99.6167, "alt": 67, "tz": 'Asia/Bangkok'},
+
+    # ── UAE (expanded) ────────────────────────────────────────────────────────
+    {"name": 'Sharjah International Airport', "city": 'Sharjah', "country": 'UAE', "iata": 'SHJ', "icao": 'OMSJ', "lat": 25.3286, "lon": 55.5172, "alt": 111, "tz": 'Asia/Dubai'},
+    {"name": 'Ras Al Khaimah Airport', "city": 'Ras Al Khaimah', "country": 'UAE', "iata": 'RKT', "icao": 'OMRK', "lat": 25.6135, "lon": 55.9388, "alt": 102, "tz": 'Asia/Dubai'},
+    {"name": 'Fujairah International Airport', "city": 'Fujairah', "country": 'UAE', "iata": 'FJR', "icao": 'OMFJ', "lat": 25.1122, "lon": 56.3240, "alt": 152, "tz": 'Asia/Dubai'},
+    {"name": 'Al Ain International Airport', "city": 'Al Ain', "country": 'UAE', "iata": 'AAN', "icao": 'OMAL', "lat": 24.2617, "lon": 55.6092, "alt": 869, "tz": 'Asia/Dubai'},
+
+    # ── Tunisia (expanded) ────────────────────────────────────────────────────
+    {"name": 'Monastir Habib Bourguiba Airport', "city": 'Monastir', "country": 'Tunisia', "iata": 'MIR', "icao": 'DTMB', "lat": 35.7581, "lon": 10.7546, "alt": 9, "tz": 'Africa/Tunis'},
+    {"name": 'Djerba Zarzis International Airport', "city": 'Djerba', "country": 'Tunisia', "iata": 'DJE', "icao": 'DTTJ', "lat": 33.8750, "lon": 10.7755, "alt": 19, "tz": 'Africa/Tunis'},
+    {"name": 'Sfax Thyna International Airport', "city": 'Sfax', "country": 'Tunisia', "iata": 'SFA', "icao": 'DTTX', "lat": 34.7179, "lon": 10.6910, "alt": 85, "tz": 'Africa/Tunis'},
+    {"name": 'Tabarka Ain Draham Airport', "city": 'Tabarka', "country": 'Tunisia', "iata": 'TBJ', "icao": 'DTKA', "lat": 36.9800, "lon": 8.8769, "alt": 230, "tz": 'Africa/Tunis'},
+    {"name": 'Tozeur Nefta International Airport', "city": 'Tozeur', "country": 'Tunisia', "iata": 'TOE', "icao": 'DTTZ', "lat": 33.9397, "lon": 8.1106, "alt": 287, "tz": 'Africa/Tunis'},
+
+    # ── Qatar (expanded) ──────────────────────────────────────────────────────
+    {"name": 'Al Udeid Air Base', "city": 'Al Udeid', "country": 'Qatar', "iata": 'XJD', "icao": 'OTBH', "lat": 25.1174, "lon": 51.3149, "alt": 130, "tz": 'Asia/Qatar'},
+
+    # ── Kuwait (expanded) ─────────────────────────────────────────────────────
+
+    # ── Bahrain (expanded) ────────────────────────────────────────────────────
+
+    # ── New Zealand (expanded) ────────────────────────────────────────────────
+    {"name": 'Nelson Airport', "city": 'Nelson', "country": 'New Zealand', "iata": 'NSN', "icao": 'NZNS', "lat": -41.2983, "lon": 173.2211, "alt": 17, "tz": 'Pacific/Auckland'},
+    {"name": 'Palmerston North Airport', "city": 'Palmerston North', "country": 'New Zealand', "iata": 'PMR', "icao": 'NZPM', "lat": -40.3206, "lon": 175.6167, "alt": 151, "tz": 'Pacific/Auckland'},
+    {"name": 'Invercargill Airport', "city": 'Invercargill', "country": 'New Zealand', "iata": 'IVC', "icao": 'NZNV', "lat": -46.4124, "lon": 168.3128, "alt": 105, "tz": 'Pacific/Auckland'},
+    {"name": 'Hamilton Airport', "city": 'Hamilton', "country": 'New Zealand', "iata": 'HLZ', "icao": 'NZHN', "lat": -37.8667, "lon": 175.3322, "alt": 172, "tz": 'Pacific/Auckland'},
+    {"name": 'Rotorua Airport', "city": 'Rotorua', "country": 'New Zealand', "iata": 'ROT', "icao": 'NZRO', "lat": -38.1092, "lon": 176.3172, "alt": 935, "tz": 'Pacific/Auckland'},
+
+    # ── Costa Rica (expanded) ─────────────────────────────────────────────────
+    {"name": 'Daniel Oduber Quiros Airport', "city": 'Liberia', "country": 'Costa Rica', "iata": 'LIR', "icao": 'MRLB', "lat": 10.5933, "lon": -85.5444, "alt": 270, "tz": 'America/Costa_Rica'},
+    {"name": 'Quepos La Managua Airport', "city": 'Quepos', "country": 'Costa Rica', "iata": 'XQP', "icao": 'MRQP', "lat": 9.4432, "lon": -84.1300, "alt": 85, "tz": 'America/Costa_Rica'},
+
+    # ── Djibouti (expanded) ───────────────────────────────────────────────────
+
+    # ── Jamaica (expanded) ────────────────────────────────────────────────────
+    {"name": 'Sangster International Airport', "city": 'Montego Bay', "country": 'Jamaica', "iata": 'MBJ', "icao": 'MKJS', "lat": 18.5037, "lon": -77.9133, "alt": 4, "tz": 'America/Jamaica'},
+
+    # ── Malta (expanded) ──────────────────────────────────────────────────────
+
+    # ── Mauritius (expanded) ──────────────────────────────────────────────────
+    {"name": 'Rodrigues Sir Gaetan Duval Airport', "city": 'Rodrigues Island', "country": 'Mauritius', "iata": 'RRG', "icao": 'FIMR', "lat": -19.7577, "lon": 63.3611, "alt": 95, "tz": 'Indian/Mauritius'}
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────

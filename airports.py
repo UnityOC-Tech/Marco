@@ -2859,6 +2859,8 @@ def fmt_airport(a, verbose=False):
     lines.append(f"  {c(YELLOW, 'Timezone:')}  {a['tz']}")
     lines.append(f"  {c(YELLOW, 'Coordinates:')}  {a['lat']:+.4f}°,  {a['lon']:+.4f}°")
     lines.append(f"  {c(YELLOW, 'Elevation:')}  {a['alt']:,} ft  ({int(a['alt'] * 0.3048):,} m)")
+    if a.get('wiki'):
+        lines.append(f"  {c(YELLOW, 'Wikipedia:')}  {a['wiki']}")
     lines.append("")
     return "\n".join(lines)
 
@@ -2921,6 +2923,7 @@ def to_dict(a):
         "longitude": a["lon"],
         "elevation_ft": a["alt"],
         "timezone": a["tz"],
+        "wikipedia": a.get("wiki", ""),
     }
 
 # ─────────────────────────────────────────────────────────────────────────────

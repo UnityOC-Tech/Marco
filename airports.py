@@ -2714,6 +2714,64 @@ AIRPORTS = [
     # Easter Island (Chile)
     # Pitcairn Islands — no airport, skip
     # Tokelau — no airport, skip
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # HISTORICAL / CLOSED AIRPORTS
+    # Code policy:
+    #   - Original IATA/ICAO used where no active airport holds those codes.
+    #   - IATA/ICAO suffixed '_H' where the code is reused by an active airport.
+    #   - Where a site is simply renamed (same location), no separate entry added.
+    # ══════════════════════════════════════════════════════════════════════════
+
+    # ── Asia-Pacific ──────────────────────────────────────────────────────────
+    # Kai Tak — the legendary checkerboard approach over Kowloon rooftops; closed 1998
+    {"name": 'Hong Kong Kai Tak Airport (closed 1998)', "city": 'Kowloon', "country": 'Hong Kong', "iata": 'KKS', "icao": 'VHHK', "lat": 22.3297, "lon": 114.1971, "alt": 15, "tz": 'Asia/Hong_Kong'},
+    # Melbourne Essendon — Melbourne's main airport until Tullamarine opened 1970; still active as GA/charter
+    {"name": 'Melbourne Essendon Airport (closed scheduled intl 1970)', "city": 'Essendon', "country": 'Australia', "iata": 'MEB', "icao": 'YMEN', "lat": -37.7281, "lon": 144.9016, "alt": 282, "tz": 'Australia/Melbourne'},
+    # Singapore Kallang — Singapore's first civil airport; closed 1955, site now demolished
+    {"name": 'Singapore Kallang Airport (closed 1955)', "city": 'Singapore', "country": 'Singapore', "iata": 'KAL', "icao": 'WSKK', "lat": 1.3082, "lon": 103.8716, "alt": 7, "tz": 'Asia/Singapore'},
+
+    # ── Europe ────────────────────────────────────────────────────────────────
+    # Berlin Tempelhof — Nazi-era grand terminal, Berlin Airlift hub; closed 2008; now a public park
+    {"name": 'Berlin Tempelhof Airport (closed 2008)', "city": 'Berlin', "country": 'Germany', "iata": 'THF', "icao": 'EDDI', "lat": 52.4728, "lon": 13.4039, "alt": 167, "tz": 'Europe/Berlin'},
+    # Berlin Tegel — West Berlin's Cold War-era main airport; closed 2020 when BER opened
+    {"name": 'Berlin Tegel Airport (closed 2020)', "city": 'Berlin', "country": 'Germany', "iata": 'TXL', "icao": 'EDDT', "lat": 52.5597, "lon": 13.2877, "alt": 122, "tz": 'Europe/Berlin'},
+    # Berlin Schönefeld — East Berlin's airport; codes SXF/EDDB reassigned to the new BER terminal on same site
+    {"name": 'Berlin Schönefeld Airport (superseded by BER 2020)', "city": 'Schönefeld', "country": 'Germany', "iata": 'SXF', "icao": 'EDDB_H', "lat": 52.3806, "lon": 13.5225, "alt": 157, "tz": 'Europe/Berlin'},
+    # Munich Riem — Munich's airport until Franz Josef Strauss opened 1992
+    {"name": 'Munich Riem Airport (closed 1992)', "city": 'Munich', "country": 'Germany', "iata": 'MUC_H', "icao": 'EDDM_H', "lat": 48.1272, "lon": 11.6875, "alt": 1726, "tz": 'Europe/Berlin'},
+    # London Croydon — Britain's first major international airport; closed 1959
+    {"name": 'London Croydon Airport (closed 1959)', "city": 'Croydon', "country": 'United Kingdom', "iata": 'CRY', "icao": 'EGCR', "lat": 51.3578, "lon": -0.1147, "alt": 234, "tz": 'Europe/London'},
+    # Oslo Fornebu — Oslo's main airport until Gardermoen opened 1998; site now redeveloped
+    {"name": 'Oslo Fornebu Airport (closed 1998)', "city": 'Oslo', "country": 'Norway', "iata": 'FBU', "icao": 'ENFB', "lat": 59.8958, "lon": 10.6175, "alt": 56, "tz": 'Europe/Oslo'},
+    # Athens Hellinikon — Athens hub until Venizelos opened 2001; Cold War spy base rumours and all
+    {"name": 'Athens Hellinikon Airport (closed 2001)', "city": 'Athens', "country": 'Greece', "iata": 'ATH_H', "icao": 'LGAT', "lat": 37.8933, "lon": 23.7261, "alt": 69, "tz": 'Europe/Athens'},
+    # Paris Le Bourget — Paris's main airport until Orly/CDG; still active for bizjets/airshow
+    {"name": 'Paris Le Bourget (closed scheduled ops 1980)', "city": 'Le Bourget', "country": 'France', "iata": 'LBG_H', "icao": 'LFPB', "lat": 48.9694, "lon": 2.4414, "alt": 218, "tz": 'Europe/Paris'},
+    # Stockholm Bromma — still operating as domestic; notable as original Stockholm intl hub
+    {"name": 'Stockholm Bromma Airport (closed intl 1983)', "city": 'Stockholm', "country": 'Sweden', "iata": 'BMA_H', "icao": 'ESSB_H', "lat": 59.3544, "lon": 17.9416, "alt": 47, "tz": 'Europe/Stockholm'},
+
+    # ── Americas ──────────────────────────────────────────────────────────────
+    # Idlewild — New York's great transatlantic terminal, renamed JFK 1963
+    {"name": 'New York Idlewild Airport (renamed JFK 1963)', "city": 'New York', "country": 'United States', "iata": 'IDL', "icao": 'KIDL', "lat": 40.6413, "lon": -73.7781, "alt": 13, "tz": 'America/New_York'},
+    # Denver Stapleton — Denver's airport for 67 years until new DEN opened 1995; codes reused
+    {"name": 'Denver Stapleton Airport (closed 1995)', "city": 'Denver', "country": 'United States', "iata": 'DEN_H', "icao": 'KDEN_H', "lat": 39.7741, "lon": -104.8763, "alt": 5333, "tz": 'America/Denver'},
+    # Chicago Meigs Field — lakefront city airport bulldozed overnight on Mayor Daley's orders, 2003
+    {"name": 'Chicago Meigs Field (destroyed 2003)', "city": 'Chicago', "country": 'United States', "iata": 'CGX', "icao": 'KCGX', "lat": 41.8588, "lon": -87.6073, "alt": 593, "tz": 'America/Chicago'},
+    # Montréal Mirabel — ill-fated super-hub that never reached its potential; passenger ops ended 2004
+    {"name": 'Montréal Mirabel Airport (closed passenger ops 2004)', "city": 'Montréal', "country": 'Canada', "iata": 'YMX_H', "icao": 'CYMX_H', "lat": 45.6795, "lon": -74.0387, "alt": 270, "tz": 'America/Toronto'},
+    # Mexico City NAICM — $13B new airport at Texcoco, construction halted/cancelled by AMLO 2018
+    {"name": 'Mexico City NAICM (construction cancelled 2018)', "city": 'Mexico City', "country": 'Mexico', "iata": 'MEX_H', "icao": 'MMMX_H', "lat": 19.4363, "lon": -98.9819, "alt": 7316, "tz": 'America/Mexico_City'},
+
+    # ── Africa & Middle East ──────────────────────────────────────────────────
+    # Cairo Almaza — early RAF/civil aerodrome, predecessor to Cairo Intl
+    {"name": 'Cairo Almaza Airport (closed civil ops ~1946)', "city": 'Cairo', "country": 'Egypt', "iata": 'CAI_H', "icao": 'HECA_H', "lat": 30.1022, "lon": 31.3601, "alt": 295, "tz": 'Africa/Cairo'},
+
+    # ── Legendary firsts ──────────────────────────────────────────────────────
+    # Kill Devil Hills — where the Wright Brothers made the first powered flight, 17 Dec 1903
+    {"name": 'Kill Devil Hills (Wright Brothers first flight, 1903)', "city": 'Kill Devil Hills', "country": 'United States', "iata": 'FFA', "icao": 'KFFA', "lat": 36.0182, "lon": -75.6713, "alt": 13, "tz": 'America/New_York'},
+    # Lakehurst NAS — hub for transatlantic airship travel; Hindenburg disaster here in 1937
+    {"name": 'Lakehurst Naval Air Station (Hindenburg 1937)', "city": 'Lakehurst', "country": 'United States', "iata": 'NEL', "icao": 'KNEL', "lat": 40.0333, "lon": -74.3536, "alt": 101, "tz": 'America/New_York'},
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────

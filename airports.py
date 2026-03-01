@@ -2831,6 +2831,365 @@ AIRPORTS = [
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────
+# CITY CODES
+# IATA metropolitan area codes — assigned to a city/metro, not a single airport.
+# Used in GDS systems (Amadeus, Sabre, Galileo) for city-pair searches.
+#
+# Rules:
+#  - A city code is DISTINCT from any airport code when a metro has 2+ airports.
+#  - When a city has only one airport, the airport IATA code doubles as the city
+#    code (not listed here — look up the airport directly).
+#  - "airports" lists active IATA codes serving the metro, primary first.
+#  - "historical" lists closed/superseded airport codes also associated with city.
+# ─────────────────────────────────────────────────────────────────────────────
+CITY_CODES = [
+
+    # ── North America ─────────────────────────────────────────────────────────
+    {"code": "NYC", "name": "New York",          "country": "United States",
+     "airports": ["JFK", "EWR", "LGA"],
+     "historical": ["IDL"],
+     "wiki": "https://en.wikipedia.org/wiki/New_York_metropolitan_area"},
+
+    {"code": "CHI", "name": "Chicago",           "country": "United States",
+     "airports": ["ORD", "MDW"],
+     "historical": ["CGX"],
+     "wiki": "https://en.wikipedia.org/wiki/Chicago_metropolitan_area"},
+
+    {"code": "WAS", "name": "Washington D.C.",   "country": "United States",
+     "airports": ["IAD", "DCA", "BWI"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Washington_metropolitan_area"},
+
+    {"code": "MIA", "name": "Miami",             "country": "United States",
+     "airports": ["MIA", "FLL", "PBI"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Miami_metropolitan_area"},
+
+    {"code": "LAX", "name": "Los Angeles",       "country": "United States",
+     "airports": ["LAX", "BUR", "LGB", "ONT", "SNA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Los_Angeles_metropolitan_area"},
+
+    {"code": "SFO", "name": "San Francisco Bay Area", "country": "United States",
+     "airports": ["SFO", "OAK", "SJC"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/San_Francisco_Bay_Area"},
+
+    {"code": "HOU", "name": "Houston",           "country": "United States",
+     "airports": ["IAH", "HOU"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Houston_metropolitan_area"},
+
+    {"code": "DFW", "name": "Dallas-Fort Worth", "country": "United States",
+     "airports": ["DFW", "DAL"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Dallas%E2%80%93Fort_Worth_metroplex"},
+
+    {"code": "DTT", "name": "Detroit",           "country": "United States",
+     "airports": ["DTW", "YIP"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Detroit_metropolitan_area"},
+
+    {"code": "YTO", "name": "Toronto",           "country": "Canada",
+     "airports": ["YYZ", "YTZ", "YHM"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Greater_Toronto_Area"},
+
+    {"code": "YMQ", "name": "Montreal",          "country": "Canada",
+     "airports": ["YUL", "YHU"],
+     "historical": ["YMX_H"],
+     "wiki": "https://en.wikipedia.org/wiki/Greater_Montreal"},
+
+    {"code": "YEA", "name": "Edmonton",          "country": "Canada",
+     "airports": ["YEG", "YXD"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Edmonton_metropolitan_region"},
+
+    {"code": "QBC", "name": "Vancouver",         "country": "Canada",
+     "airports": ["YVR", "YXX"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Metro_Vancouver_Regional_District"},
+
+    {"code": "MEX", "name": "Mexico City",       "country": "Mexico",
+     "airports": ["MEX", "NLU"],
+     "historical": ["MEX_H"],
+     "wiki": "https://en.wikipedia.org/wiki/Greater_Mexico_City"},
+
+    {"code": "GRU", "name": "Sao Paulo",         "country": "Brazil",
+     "airports": ["GRU", "CGH", "VCP"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_metropolitan_area"},
+
+    {"code": "RIO", "name": "Rio de Janeiro",    "country": "Brazil",
+     "airports": ["GIG", "SDU"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Rio_de_Janeiro_(state)"},
+
+    {"code": "BHZ", "name": "Belo Horizonte",    "country": "Brazil",
+     "airports": ["CNF", "PLU"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Belo_Horizonte_metropolitan_area"},
+
+    {"code": "BUE", "name": "Buenos Aires",      "country": "Argentina",
+     "airports": ["EZE", "AEP"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Buenos_Aires"},
+
+    # ── Europe ────────────────────────────────────────────────────────────────
+    {"code": "LON", "name": "London",            "country": "United Kingdom",
+     "airports": ["LHR", "LGW", "STN", "LTN", "LCY", "SEN"],
+     "historical": ["CRY"],
+     "wiki": "https://en.wikipedia.org/wiki/London"},
+
+    {"code": "PAR", "name": "Paris",             "country": "France",
+     "airports": ["CDG", "ORY", "BVA"],
+     "historical": ["LBG_H"],
+     "wiki": "https://en.wikipedia.org/wiki/Paris"},
+
+    {"code": "BER", "name": "Berlin",            "country": "Germany",
+     "airports": ["BER"],
+     "historical": ["TXL", "SXF", "THF"],
+     "wiki": "https://en.wikipedia.org/wiki/Berlin"},
+
+    {"code": "MOW", "name": "Moscow",            "country": "Russia",
+     "airports": ["SVO", "DME", "VKO", "ZIA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Moscow"},
+
+    {"code": "MIL", "name": "Milan",             "country": "Italy",
+     "airports": ["MXP", "LIN", "BGY"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Milan_metropolitan_area"},
+
+    {"code": "ROM", "name": "Rome",              "country": "Italy",
+     "airports": ["FCO", "CIA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Rome"},
+
+    {"code": "STO", "name": "Stockholm",         "country": "Sweden",
+     "airports": ["ARN", "NYO", "VST"],
+     "historical": ["BMA_H"],
+     "wiki": "https://en.wikipedia.org/wiki/Stockholm"},
+
+    {"code": "GOA", "name": "Gothenburg",        "country": "Sweden",
+     "airports": ["GOT", "GSE"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Gothenburg"},
+
+    {"code": "BUH", "name": "Bucharest",         "country": "Romania",
+     "airports": ["OTP", "BBU"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Bucharest"},
+
+    {"code": "BRU", "name": "Brussels",          "country": "Belgium",
+     "airports": ["BRU", "CRL"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Brussels"},
+
+    {"code": "IST", "name": "Istanbul",          "country": "Turkey",
+     "airports": ["IST", "SAW"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Istanbul"},
+
+    {"code": "ATH", "name": "Athens",            "country": "Greece",
+     "airports": ["ATH"],
+     "historical": ["ATH_H"],
+     "wiki": "https://en.wikipedia.org/wiki/Athens"},
+
+    {"code": "OSL", "name": "Oslo",              "country": "Norway",
+     "airports": ["OSL", "TRF"],
+     "historical": ["FBU"],
+     "wiki": "https://en.wikipedia.org/wiki/Oslo"},
+
+    {"code": "KBP", "name": "Kyiv",              "country": "Ukraine",
+     "airports": ["KBP", "IEV"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Kyiv"},
+
+    {"code": "MSQ", "name": "Minsk",             "country": "Belarus",
+     "airports": ["MSQ", "MHP"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Minsk"},
+
+    # ── Middle East & Africa ──────────────────────────────────────────────────
+    {"code": "DXB", "name": "Dubai",             "country": "UAE",
+     "airports": ["DXB", "DWC"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Dubai"},
+
+    {"code": "CAI", "name": "Cairo",             "country": "Egypt",
+     "airports": ["CAI", "SPX"],
+     "historical": ["CAI_H"],
+     "wiki": "https://en.wikipedia.org/wiki/Cairo"},
+
+    {"code": "JNB", "name": "Johannesburg",      "country": "South Africa",
+     "airports": ["JNB", "HLA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Johannesburg"},
+
+    {"code": "NBO", "name": "Nairobi",           "country": "Kenya",
+     "airports": ["NBO", "WIL"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Nairobi"},
+
+    {"code": "DSS", "name": "Dakar",             "country": "Senegal",
+     "airports": ["DSS", "DKR"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Dakar"},
+
+    # ── Asia-Pacific ──────────────────────────────────────────────────────────
+    {"code": "TYO", "name": "Tokyo",             "country": "Japan",
+     "airports": ["NRT", "HND"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Tokyo"},
+
+    {"code": "OSA", "name": "Osaka",             "country": "Japan",
+     "airports": ["KIX", "ITM", "UKB"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Osaka"},
+
+    {"code": "SPK", "name": "Sapporo",           "country": "Japan",
+     "airports": ["CTS", "OKD"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Sapporo"},
+
+    {"code": "BJS", "name": "Beijing",           "country": "China",
+     "airports": ["PEK", "PKX"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Beijing"},
+
+    {"code": "SHA", "name": "Shanghai",          "country": "China",
+     "airports": ["PVG", "SHA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Shanghai"},
+
+    {"code": "CTU", "name": "Chengdu",           "country": "China",
+     "airports": ["TFU", "CTU"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Chengdu"},
+
+    {"code": "SEL", "name": "Seoul",             "country": "South Korea",
+     "airports": ["ICN", "GMP"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Seoul_Capital_Area"},
+
+    {"code": "BKK", "name": "Bangkok",           "country": "Thailand",
+     "airports": ["BKK", "DMK"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Bangkok"},
+
+    {"code": "KUL", "name": "Kuala Lumpur",      "country": "Malaysia",
+     "airports": ["KUL", "SZB"],
+     "historical": ["SBE"],
+     "wiki": "https://en.wikipedia.org/wiki/Kuala_Lumpur"},
+
+    {"code": "SIN", "name": "Singapore",         "country": "Singapore",
+     "airports": ["SIN", "XSP"],
+     "historical": ["KAL", "QPG"],
+     "wiki": "https://en.wikipedia.org/wiki/Singapore"},
+
+    {"code": "JKT", "name": "Jakarta",           "country": "Indonesia",
+     "airports": ["CGK"],
+     "historical": ["JKT_H", "HLP"],
+     "wiki": "https://en.wikipedia.org/wiki/Jakarta"},
+
+    {"code": "MNL", "name": "Manila",            "country": "Philippines",
+     "airports": ["MNL", "CRK"],
+     "historical": ["NSP"],
+     "wiki": "https://en.wikipedia.org/wiki/Metro_Manila"},
+
+    {"code": "SGN", "name": "Ho Chi Minh City",  "country": "Vietnam",
+     "airports": ["SGN"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City"},
+
+    {"code": "HAN", "name": "Hanoi",             "country": "Vietnam",
+     "airports": ["HAN"],
+     "historical": ["HNI"],
+     "wiki": "https://en.wikipedia.org/wiki/Hanoi"},
+
+    {"code": "MDN", "name": "Medan",             "country": "Indonesia",
+     "airports": ["KNO"],
+     "historical": ["MES"],
+     "wiki": "https://en.wikipedia.org/wiki/Medan"},
+
+    {"code": "BOM", "name": "Mumbai",            "country": "India",
+     "airports": ["BOM"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Mumbai_Metropolitan_Region"},
+
+    {"code": "DEL", "name": "Delhi",             "country": "India",
+     "airports": ["DEL"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Delhi"},
+
+    {"code": "CCU", "name": "Kolkata",           "country": "India",
+     "airports": ["CCU"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Kolkata"},
+
+    {"code": "HKG", "name": "Hong Kong",         "country": "Hong Kong",
+     "airports": ["HKG"],
+     "historical": ["KKS"],
+     "wiki": "https://en.wikipedia.org/wiki/Hong_Kong"},
+
+    {"code": "TPE", "name": "Taipei",            "country": "Taiwan",
+     "airports": ["TPE", "TSA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Taipei"},
+
+    {"code": "CMB", "name": "Colombo",           "country": "Sri Lanka",
+     "airports": ["CMB", "RML"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Colombo"},
+
+    {"code": "ULN", "name": "Ulaanbaatar",       "country": "Mongolia",
+     "airports": ["ULN", "UBN"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Ulaanbaatar"},
+
+    {"code": "THR", "name": "Tehran",            "country": "Iran",
+     "airports": ["IKA", "THR"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Tehran"},
+
+    # ── Oceania ───────────────────────────────────────────────────────────────
+    {"code": "SYD", "name": "Sydney",            "country": "Australia",
+     "airports": ["SYD", "WSI"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Sydney"},
+
+    {"code": "MEL", "name": "Melbourne",         "country": "Australia",
+     "airports": ["MEL", "AVV"],
+     "historical": ["MEB"],
+     "wiki": "https://en.wikipedia.org/wiki/Melbourne"},
+
+    {"code": "BNE", "name": "Brisbane",          "country": "Australia",
+     "airports": ["BNE", "OOL"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Brisbane"},
+
+    {"code": "NOU", "name": "Noumea",            "country": "New Caledonia",
+     "airports": ["NOU", "GEA"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Noum%C3%A9a"},
+
+    {"code": "WLG", "name": "Wellington",        "country": "New Zealand",
+     "airports": ["WLG", "PMR"],
+     "historical": [],
+     "wiki": "https://en.wikipedia.org/wiki/Wellington"},
+]
+
+# City code index: code -> city entry
+CITY_INDEX = {cc["code"].upper(): cc for cc in CITY_CODES}
+
+# Reverse index: airport IATA -> city code(s) it belongs to
+AIRPORT_CITY_INDEX = {}
+for _cc in CITY_CODES:
+    for _ap in _cc["airports"] + _cc.get("historical", []):
+        AIRPORT_CITY_INDEX.setdefault(_ap.upper(), []).append(_cc["code"])
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Indexes
 # ─────────────────────────────────────────────────────────────────────────────
 IATA_INDEX = {a["iata"].upper(): a for a in AIRPORTS}
@@ -2856,6 +3215,10 @@ def fmt_airport(a, verbose=False):
     lines.append(f"  {'─' * 52}")
     lines.append(f"  {c(YELLOW, 'IATA:')}  {c(BOLD, a['iata'])}    {c(YELLOW, 'ICAO:')}  {c(BOLD, a['icao'])}")
     lines.append(f"  {c(YELLOW, 'City:')}  {a['city']},  {a['country']}")
+    city_codes = AIRPORT_CITY_INDEX.get(a['iata'].upper(), [])
+    if city_codes:
+        cc_parts = [f"{c(BOLD, cc)}  ({CITY_INDEX[cc]['name']})" for cc in city_codes]
+        lines.append(f"  {c(YELLOW, 'Metro code:')}  {',  '.join(cc_parts)}")
     lines.append(f"  {c(YELLOW, 'Timezone:')}  {a['tz']}")
     lines.append(f"  {c(YELLOW, 'Coordinates:')}  {a['lat']:+.4f}°,  {a['lon']:+.4f}°")
     lines.append(f"  {c(YELLOW, 'Elevation:')}  {a['alt']:,} ft  ({int(a['alt'] * 0.3048):,} m)")
@@ -2871,6 +3234,34 @@ def fmt_airport_short(a):
         f"{a['city']}, {a['country']}"
     )
 
+def fmt_city(cc):
+    """Format a city code entry for display."""
+    active = cc["airports"]
+    hist   = cc.get("historical", [])
+    ap_strs = []
+    for code in active:
+        a = IATA_INDEX.get(code.upper())
+        label = a["name"] if a else code
+        ap_strs.append(f"    {c(BOLD, code)}  {label}")
+    lines = []
+    lines.append(c(BOLD + CYAN, f"\n  ✈  {cc['name']}  —  City Code: {c(BOLD, cc['code'])}"))
+    lines.append(f"  {'─' * 52}")
+    lines.append(f"  {c(YELLOW, 'Country:')}  {cc['country']}")
+    lines.append(f"  {c(YELLOW, 'Active airports:')}")
+    lines.extend(ap_strs)
+    if hist:
+        hist_strs = []
+        for code in hist:
+            a = IATA_INDEX.get(code.upper())
+            label = a["name"] if a else code
+            hist_strs.append(f"    {c(DIM, code)}  {c(DIM, label)}")
+        lines.append(f"  {c(YELLOW, 'Historical airports:')}")
+        lines.extend(hist_strs)
+    if cc.get("wiki"):
+        lines.append(f"  {c(YELLOW, 'Wikipedia:')}  {cc['wiki']}")
+    lines.append("")
+    return "\n".join(lines)
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Lookup logic
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2880,6 +3271,8 @@ def lookup(code):
         return IATA_INDEX[code], "IATA"
     if code in ICAO_INDEX:
         return ICAO_INDEX[code], "ICAO"
+    if code in CITY_INDEX:
+        return CITY_INDEX[code], "CITY"
     return None, None
 
 def search(query):
@@ -2913,17 +3306,29 @@ def nearest(lat, lon, n=5):
 # JSON export
 # ─────────────────────────────────────────────────────────────────────────────
 def to_dict(a):
+    city_codes = AIRPORT_CITY_INDEX.get(a["iata"].upper(), [])
     return {
         "name": a["name"],
         "city": a["city"],
         "country": a["country"],
         "iata": a["iata"],
         "icao": a["icao"],
+        "metro_codes": city_codes,
         "latitude": a["lat"],
         "longitude": a["lon"],
         "elevation_ft": a["alt"],
         "timezone": a["tz"],
         "wikipedia": a.get("wiki", ""),
+    }
+
+def city_to_dict(cc):
+    return {
+        "code": cc["code"],
+        "name": cc["name"],
+        "country": cc["country"],
+        "airports": cc["airports"],
+        "historical": cc.get("historical", []),
+        "wikipedia": cc.get("wiki", ""),
     }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2942,8 +3347,11 @@ examples:
   airport_lookup LAX
   airport_lookup KLAX
   airport_lookup LAX JFK NRT
+  airport_lookup NYC                  (city/metro code)
+  airport_lookup LON TYO              (multiple city codes)
   airport_lookup --search london
   airport_lookup --list-country Japan
+  airport_lookup --list-cities
   airport_lookup --nearest 51.5 -0.12
   airport_lookup LAX --json
   airport_lookup --stats
@@ -2982,11 +3390,29 @@ examples:
         action="store_true",
         help="Show database statistics",
     )
+    p.add_argument(
+        "--list-cities",
+        action="store_true",
+        help="List all city/metro codes in the database",
+    )
     return p
 
 def main():
     parser = build_parser()
     args = parser.parse_args()
+
+    # ── list-cities ───────────────────────────────────────────────────────────
+    if args.list_cities:
+        if args.json:
+            print(json.dumps([city_to_dict(cc) for cc in CITY_CODES], indent=2))
+            return
+        print(c(BOLD + CYAN, f"\n  ✈  City / Metro Codes  ({len(CITY_CODES)} entries)"))
+        print(f"  {'─' * 70}")
+        for cc in sorted(CITY_CODES, key=lambda x: x['name']):
+            ap_list = ", ".join(cc["airports"])
+            print(f"  {c(BOLD, cc['code'])}  {cc['name']:<22} {cc['country']:<22} → {ap_list}")
+        print()
+        return
 
     # ── stats ─────────────────────────────────────────────────────────────────
     if args.stats:
@@ -2994,6 +3420,7 @@ def main():
         print(c(BOLD + CYAN, f"\n  ✈  Airport Database Statistics"))
         print(f"  {'─' * 40}")
         print(f"  Total airports : {c(BOLD, str(len(AIRPORTS)))}")
+        print(f"  City codes     : {c(BOLD, str(len(CITY_CODES)))}")
         print(f"  Countries      : {c(BOLD, str(len(countries)))}")
         print(f"\n  Countries covered:")
         for co in countries:
@@ -3064,19 +3491,25 @@ def main():
             not_found.append(code)
 
     if args.json:
-        print(json.dumps([to_dict(a) for a, _ in found], indent=2))
+        out = []
+        for result, kind in found:
+            out.append(city_to_dict(result) if kind == "CITY" else to_dict(result))
+        print(json.dumps(out, indent=2))
         if not_found:
             for code in not_found:
                 sys.stderr.write(f"Not found: {code}\n")
         return
 
-    for a, kind in found:
-        print(fmt_airport(a))
+    for result, kind in found:
+        if kind == "CITY":
+            print(fmt_city(result))
+        else:
+            print(fmt_airport(result))
 
     for code in not_found:
         print(c(RED, f"\n  ✗  '{code}' — code not found in database."))
-        # suggest close IATA matches
-        suggestions = [k for k in list(IATA_INDEX) + list(ICAO_INDEX)
+        # suggest close IATA / ICAO / city matches
+        suggestions = [k for k in list(IATA_INDEX) + list(ICAO_INDEX) + list(CITY_INDEX)
                        if k.startswith(code[:2].upper())][:4]
         if suggestions:
             print(c(DIM, f"     Did you mean: {', '.join(suggestions)}?"))

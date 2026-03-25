@@ -21,7 +21,7 @@ def calculate_distance(lat1, lon1, lat2, lon2):
     a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
     return 2 * EARTH_RADIUS_KM * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
-def get_airports_in_range(center_code, min_km, max_km, large_only=False):
+def get_airports_in_range(center_code, min_km, max_km, only_large=True):
     download_data()
     airports_data = []
     center_coords = None
@@ -31,6 +31,7 @@ def get_airports_in_range(center_code, min_km, max_km, large_only=False):
         reader = csv.DictReader(f)
         for row in reader:
             airports_data.append(row)
+            # Match against IATA (SYD) or Ident (YSSY)
             if row['iata_code'] == center_code or row['ident'] == center_code:
                 center_coords = (float(row['latitude_deg']), float(row['longitude_deg']))
     
@@ -46,8 +47,8 @@ def get_airports_in_range(center_code, min_km, max_km, large_only=False):
                                 float(row['latitude_deg']), float(row['longitude_deg']))
 
         if min_km <= dist <= max_km:
-            # Filter for 'large_airport' type specifically
-            if large_only and row['type'] != 'large_airport':
+            # Logic Inverted: Default is to skip if not large_airport
+            if only_large and row['type'] != 'large_airport':
                 continue
 
             results.append({
@@ -60,11 +61,12 @@ def get_airports_in_range(center_code, min_km, max_km, large_only=False):
     return sorted(results, key=lambda x: x['distance'])
 
 def main():
-    parser = argparse.ArgumentParser(description="Find large airports within a distance range.")
+    parser = argparse.ArgumentParser(description="Find airports within a distance range.")
     parser.add_argument("code", help="Center airport code (e.g., SYD)")
     parser.add_argument("max_dist", type=float, help="Maximum distance in km")
     parser.add_argument("--min", type=float, default=0.0, help="Minimum distance in km")
-    parser.add_argument("--large-only", action="store_true", help="Only show major 'large_airport' entries")
+    # Added --include-all to disable the default large-only filter
+    parser.add_argument("--include-all", action="store_true", help="Include all airport types (default is large only)")
 
     args = parser.parse_args()
 
@@ -72,14 +74,16 @@ def main():
         print(f"Error: Min ({args.min}km) is greater than Max ({args.max_dist}km).")
         return
 
-    nearby = get_airports_in_range(args.code, args.min, args.max_dist, args.large_only)
+    # Pass the inverted state of include_all to the filtering logic
+    nearby = get_airports_in_range(args.code, args.min, args.max_dist, only_large=not args.include_all)
 
     if nearby is None:
         print(f"Error: Could not find airport '{args.code.upper()}'.")
     elif not nearby:
         print("No airports found within that criteria.")
     else:
-        print(f"\nFound {len(nearby)} major airports:")
+        label = "major" if not args.include_all else "total"
+        print(f"\nFound {len(nearby)} {label} airports:")
         print("-" * 75)
         print(f"{'Code':<10} | {'Name':<45} | {'Distance'}")
         print("-" * 75)

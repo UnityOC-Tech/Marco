@@ -12,54 +12,46 @@ DATA_FILE = "airports.csv"
 EARTH_RADII = {"km": 6371.0, "mi": 3958.8, "nm": 3440.1}
 
 # --- City Name Overrides ---
-# Unified Toronto entries to remove the false dichotomy
+# Now supports spaces! Overrides are used exactly as written.
 CITY_OVERRIDES = {
-    "YYZ": "Toronto", 
-    "YTZ": "Toronto", 
-    "YVR": "Vancouver",
-    "YUL": "Montreal", "YYC": "Calgary", "YOW": "Ottawa",
-    "YEG": "Edmonton", "YWG": "Winnipeg", "YHZ": "Halifax",
-    "JFK": "New-York", "EWR": "New-York", "LGA": "New-York",
-    "MEX": "Mexico-City", "NLU": "Mexico-City (AIFA)",
-    "BOS": "Boston", "FLL": "Fort-Lauderdale", "MCO": "Orlando",
-    "LYS": "Lyon", "CDG": "Paris", "ORY": "Paris",
-    "LHR": "London", "LGW": "London", "WSI": "Sydney",
-    "NRT": "Tokyo", "HND": "Tokyo", "ICN": "Seoul"
+    "YYZ": "Toronto", "YTZ": "Toronto",
+    "JFK": "New York", "EWR": "New York", "LGA": "New York",
+    "LHR": "London", "LGW": "London", "STN": "London", "LCY": "London",
+    "HND": "Tokyo", "NRT": "Tokyo",
+    "MEX": "Mexico City", "NLU": "Mexico City (AIFA)",
+    "SCL": "Santiago", "BOG": "Bogota", "LIM": "Lima", "GRU": "Sao Paulo",
+    "WSI": "Sydney", "CDG": "Paris", "ORY": "Paris"
 }
 
 # --- Alliance Registry ---
 ALLIANCES = {
     "oneworld": {"AA", "BA", "IB", "QF", "CX", "JL", "QR", "AY", "AS", "AT", "MH", "UL", "HA"},
-    "star": {"UA", "LH", "SQ", "NZ", "AC", "NH", "OZ", "TK", "LX", "OS", "SN", "TP", "AI", "ET", "LO", "AZ", "LG"},
+    "star": {"UA", "LH", "SQ", "NZ", "AC", "NH", "OZ", "TK", "LX", "OS", "SN", "TP", "AI", "ET", "LO", "AZ", "LG", "AV"},
     "skyteam": {"DL", "AF", "KL", "KE", "AM", "SV", "VN", "GA", "ME", "SK"}
 }
 
 # --- Airline Hub Registry ---
 AIRLINE_HUBS = {
+    # South America (New Additions)
+    "LA": {"SCL", "GRU", "LIM", "BOG", "AEP", "GRU"}, # LATAM
+    "AV": {"BOG", "SAL", "LIM"},                     # Avianca
+    
+    # Canada & Mexico
     "AC": {"YYZ", "YVR", "YUL", "YYC", "YOW", "YHZ"}, 
     "WS": {"YYC", "YYZ", "YVR", "YEG", "YWG"},       
-    "TS": {"YUL", "YYZ", "YVR"},                     
-    "PD": {"YTZ", "YYZ", "YOW", "YUL"},             
-    "B6": {"JFK", "BOS", "FLL", "MCO", "LGB", "SJU", "PBI"},
     "AM": {"MEX", "MTY", "GDL", "CUN", "TIJ"}, 
-    "Y4": {"MEX", "TIJ", "GDL", "CUN", "MTY", "BJX"}, 
-    "VB": {"MTY", "MEX", "GDL", "CUN", "TIJ"}, 
-    "LG": {"LUX"}, "DY": {"OSL", "ARN", "CPH", "BGO", "SVG", "TRD", "HEL"}, 
-    "SK": {"CPH", "ARN", "OSL"}, "AY": {"HEL"}, "LX": {"ZRH", "GVA"},
-    "AZ": {"FCO", "LIN", "MXP"}, "LO": {"WAW"}, "TP": {"LIS", "OPO"},
-    "BT": {"RIX", "VNO", "TLL"}, "AF": {"CDG", "ORY", "NCE", "LYS"},
-    "KL": {"AMS"}, "BA": {"LHR", "LGW", "LCY"}, "IB": {"MAD", "BCN"},
-    "OS": {"VIE"}, "LH": {"FRA", "MUC", "BER", "DUS", "HAM", "STR", "HAJ"},
-    "VA": {"BNE", "MEL", "SYD", "ADL", "PER"}, 
-    "QF": {"SYD", "MEL", "BNE", "PER", "ADL", "DRW", "TMW", "CNS", "TSV", "CBR", "WSI"},
-    "NZ": {"AKL", "CHC", "WLG", "ZQN", "NSN", "DUD"},
-    "HA": {"HNL", "OGG", "KOA", "LIH"}, "AS": {"SEA", "ANC", "PDX", "SFO", "LAX", "HNL"},
-    "KE": {"ICN", "GMP", "PUS"}, "OZ": {"ICN", "GMP", "PUS"},
-    "JL": {"HND", "NRT", "ITM", "KIX"}, "NH": {"HND", "NRT", "ITM", "KIX"},
-    "CX": {"HKG"}, "SQ": {"SIN"}, "EI": {"DUB", "SNN", "ORK"},
+    
+    # USA & JetBlue
+    "B6": {"JFK", "BOS", "FLL", "MCO", "LGB", "SJU", "PBI"},
     "UA": {"ORD", "SFO", "EWR", "DEN", "IAH", "LAX", "IAD", "HNL"},
     "AA": {"CLT", "DFW", "MIA", "PHL", "PHX", "DCA", "ORD", "LGA", "LAX", "JFK"},
-    "DL": {"ATL", "DTW", "MSP", "SLC", "JFK", "LGA", "BOS", "LAX", "SEA", "HNL"}
+    "DL": {"ATL", "DTW", "MSP", "SLC", "JFK", "LGA", "BOS", "LAX", "SEA", "HNL"},
+    
+    # Europe, Oceania, & Asia
+    "BA": {"LHR", "LGW", "LCY"}, "IB": {"MAD", "BCN"},
+    "AF": {"CDG", "ORY", "NCE", "LYS"}, "LH": {"FRA", "MUC", "BER"},
+    "QF": {"SYD", "MEL", "BNE", "PER", "ADL", "DRW", "WSI"},
+    "NZ": {"AKL", "CHC", "WLG"}, "SQ": {"SIN"}, "CX": {"HKG"}
 }
 
 def download_data():
@@ -121,16 +113,19 @@ def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, hub_o
         display_airlines = get_filtered_airlines(iata, alliance_limit=alliance)
         if (hub_only or alliance) and not display_airlines: continue
 
+        # Smart City Logic: 
+        # 1. Check override list (preserves spaces)
+        # 2. Fallback: Truncate technical names to first word
         if iata in CITY_OVERRIDES:
-            short_city = CITY_OVERRIDES[iata]
+            display_city = CITY_OVERRIDES[iata]
         else:
             full_city = row['municipality'] or "Unknown"
-            short_city = full_city.split()[0].replace(',', '').replace('-', '')
+            display_city = full_city.split()[0].replace(',', '').replace('-', '')
 
         results.append({
             "code": iata if iata else row['ident'],
             "name": row['name'],
-            "city": short_city,
+            "city": display_city,
             "distance": round(dist, 2),
             "airlines": display_airlines
         })
@@ -162,12 +157,12 @@ def main():
     mode_label += "HUBS" if args.hub_only or args.alliance else "LARGE AIRPORTS"
     
     print(f"\nFound {len(res)} {mode_label} for {args.code.upper()}:")
-    print("=" * 125)
-    print(f"{'Code':<8} | {'City':<15} | {'Name':<40} | {'Distance':<12} | {'Airlines'}")
-    print("-" * 125)
+    print("=" * 130)
+    print(f"{'Code':<8} | {'City':<18} | {'Name':<40} | {'Distance':<12} | {'Airlines'}")
+    print("-" * 130)
     for a in res:
         if a['distance'] == 0: continue
-        print(f"{a['code']:<8} | {a['city']:<15} | {a['name'][:40]:<40} | {a['distance']:>6} {args.unit:<3} | {a['airlines']}")
+        print(f"{a['code']:<8} | {a['city']:<18} | {a['name'][:40]:<40} | {a['distance']:>6} {args.unit:<3} | {a['airlines']}")
 
 if __name__ == "__main__":
     main()

@@ -12,16 +12,16 @@ DATA_FILE = "airports.csv"
 EARTH_RADII = {"km": 6371.0, "mi": 3958.8, "nm": 3440.1}
 
 # --- City Name Overrides ---
+# Unified Toronto entries to remove the false dichotomy
 CITY_OVERRIDES = {
-    # Canada
-    "YYZ": "Toronto", "YTZ": "Toronto-City", "YVR": "Vancouver",
+    "YYZ": "Toronto", 
+    "YTZ": "Toronto", 
+    "YVR": "Vancouver",
     "YUL": "Montreal", "YYC": "Calgary", "YOW": "Ottawa",
     "YEG": "Edmonton", "YWG": "Winnipeg", "YHZ": "Halifax",
-    # USA & Mexico
     "JFK": "New-York", "EWR": "New-York", "LGA": "New-York",
     "MEX": "Mexico-City", "NLU": "Mexico-City (AIFA)",
     "BOS": "Boston", "FLL": "Fort-Lauderdale", "MCO": "Orlando",
-    # Europe & Pacific
     "LYS": "Lyon", "CDG": "Paris", "ORY": "Paris",
     "LHR": "London", "LGW": "London", "WSI": "Sydney",
     "NRT": "Tokyo", "HND": "Tokyo", "ICN": "Seoul"
@@ -36,33 +36,24 @@ ALLIANCES = {
 
 # --- Airline Hub Registry ---
 AIRLINE_HUBS = {
-    # Canada (New Additions)
-    "AC": {"YYZ", "YVR", "YUL", "YYC", "YOW", "YHZ"}, # Air Canada
-    "WS": {"YYC", "YYZ", "YVR", "YEG", "YWG"},       # WestJet
-    "TS": {"YUL", "YYZ", "YVR"},                     # Air Transat
-    "PD": {"YTZ", "YYZ", "YOW", "YUL"},             # Porter
-    
-    # JetBlue & Mexico
+    "AC": {"YYZ", "YVR", "YUL", "YYC", "YOW", "YHZ"}, 
+    "WS": {"YYC", "YYZ", "YVR", "YEG", "YWG"},       
+    "TS": {"YUL", "YYZ", "YVR"},                     
+    "PD": {"YTZ", "YYZ", "YOW", "YUL"},             
     "B6": {"JFK", "BOS", "FLL", "MCO", "LGB", "SJU", "PBI"},
     "AM": {"MEX", "MTY", "GDL", "CUN", "TIJ"}, 
     "Y4": {"MEX", "TIJ", "GDL", "CUN", "MTY", "BJX"}, 
     "VB": {"MTY", "MEX", "GDL", "CUN", "TIJ"}, 
-    
-    # Europe & Nordics
     "LG": {"LUX"}, "DY": {"OSL", "ARN", "CPH", "BGO", "SVG", "TRD", "HEL"}, 
     "SK": {"CPH", "ARN", "OSL"}, "AY": {"HEL"}, "LX": {"ZRH", "GVA"},
     "AZ": {"FCO", "LIN", "MXP"}, "LO": {"WAW"}, "TP": {"LIS", "OPO"},
     "BT": {"RIX", "VNO", "TLL"}, "AF": {"CDG", "ORY", "NCE", "LYS"},
     "KL": {"AMS"}, "BA": {"LHR", "LGW", "LCY"}, "IB": {"MAD", "BCN"},
     "OS": {"VIE"}, "LH": {"FRA", "MUC", "BER", "DUS", "HAM", "STR", "HAJ"},
-    
-    # Oceania & Pacific
     "VA": {"BNE", "MEL", "SYD", "ADL", "PER"}, 
     "QF": {"SYD", "MEL", "BNE", "PER", "ADL", "DRW", "TMW", "CNS", "TSV", "CBR", "WSI"},
     "NZ": {"AKL", "CHC", "WLG", "ZQN", "NSN", "DUD"},
     "HA": {"HNL", "OGG", "KOA", "LIH"}, "AS": {"SEA", "ANC", "PDX", "SFO", "LAX", "HNL"},
-    
-    # Asia & North America
     "KE": {"ICN", "GMP", "PUS"}, "OZ": {"ICN", "GMP", "PUS"},
     "JL": {"HND", "NRT", "ITM", "KIX"}, "NH": {"HND", "NRT", "ITM", "KIX"},
     "CX": {"HKG"}, "SQ": {"SIN"}, "EI": {"DUB", "SNN", "ORK"},

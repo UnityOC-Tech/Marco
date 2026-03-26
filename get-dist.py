@@ -13,6 +13,13 @@ EARTH_RADII = {"km": 6371.0, "mi": 3958.8, "nm": 3440.1}
 
 # --- City Name Overrides ---
 CITY_OVERRIDES = {
+    "JFK": "New-York",
+    "EWR": "New-York",
+    "LGA": "New-York",
+    "BOS": "Boston",
+    "FLL": "Fort-Lauderdale",
+    "MCO": "Orlando",
+    "SJU": "San-Juan",
     "MEX": "Mexico-City",
     "NLU": "Mexico-City (AIFA)",
     "MTY": "Monterrey",
@@ -31,9 +38,6 @@ CITY_OVERRIDES = {
     "HND": "Tokyo",
     "ICN": "Seoul",
     "GMP": "Seoul",
-    "EWR": "New-York",
-    "JFK": "New-York",
-    "LGA": "New-York",
     "WSI": "Sydney", 
 }
 
@@ -46,10 +50,13 @@ ALLIANCES = {
 
 # --- Airline Hub Registry ---
 AIRLINE_HUBS = {
-    # Mexico (New Additions)
-    "AM": {"MEX", "MTY", "GDL", "CUN", "TIJ"}, # Aeroméxico
-    "Y4": {"MEX", "TIJ", "GDL", "CUN", "MTY", "BJX"}, # Volaris
-    "VB": {"MTY", "MEX", "GDL", "CUN", "TIJ"}, # Viva Aerobus
+    # JetBlue (New Addition)
+    "B6": {"JFK", "BOS", "FLL", "MCO", "LGB", "SJU", "PBI"},
+    
+    # Mexico
+    "AM": {"MEX", "MTY", "GDL", "CUN", "TIJ"}, 
+    "Y4": {"MEX", "TIJ", "GDL", "CUN", "MTY", "BJX"}, 
+    "VB": {"MTY", "MEX", "GDL", "CUN", "TIJ"}, 
     
     # Europe & Nordics
     "LG": {"LUX"}, "DY": {"OSL", "ARN", "CPH", "BGO", "SVG", "TRD", "HEL"}, 

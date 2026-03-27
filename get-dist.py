@@ -12,46 +12,99 @@ DATA_FILE = "airports.csv"
 EARTH_RADII = {"km": 6371.0, "mi": 3958.8, "nm": 3440.1}
 
 # --- City Name Overrides ---
-# Now supports spaces! Overrides are used exactly as written.
+# Unified names for multi-airport cities. No brackets or technical suffixes.
 CITY_OVERRIDES = {
-    "YYZ": "Toronto", "YTZ": "Toronto",
-    "JFK": "New York", "EWR": "New York", "LGA": "New York",
-    "LHR": "London", "LGW": "London", "STN": "London", "LCY": "London",
+    # Taiwan
+    "TPE": "Taipei", "TSA": "Taipei", "KHH": "Kaohsiung",
+    
+    # Southeast Asia
+    "BKK": "Bangkok", "DMK": "Bangkok",
+    "MNL": "Manila", "CRK": "Manila",
+    "CGK": "Jakarta", "HLP": "Jakarta",
+    "KUL": "Kuala Lumpur", "SZB": "Kuala Lumpur",
+    "SGN": "Ho Chi Minh City", "HAN": "Hanoi",
+    "CEB": "Cebu", "DPS": "Bali",
+
+    # Mainland China
+    "PEK": "Beijing", "PKX": "Beijing",
+    "PVG": "Shanghai", "SHA": "Shanghai",
+    "CAN": "Guangzhou", "SZX": "Shenzhen",
+    "CTU": "Chengdu", "TFU": "Chengdu",
+    "KMG": "Kunming", "XIY": "Xi'an",
+    "HAK": "Haikou", "XMN": "Xiamen",
+    
+    # Asia & Oceania
     "HND": "Tokyo", "NRT": "Tokyo",
-    "MEX": "Mexico City", "NLU": "Mexico City (AIFA)",
-    "SCL": "Santiago", "BOG": "Bogota", "LIM": "Lima", "GRU": "Sao Paulo",
-    "WSI": "Sydney", "CDG": "Paris", "ORY": "Paris"
+    "SYD": "Sydney", "WSI": "Sydney",
+    "MEL": "Melbourne", "AVV": "Melbourne",
+    "SIN": "Singapore", "HKG": "Hong Kong", "ICN": "Seoul", "GMP": "Seoul",
+    
+    # Americas
+    "JFK": "New York", "EWR": "New York", "LGA": "New York",
+    "ORD": "Chicago", "MDW": "Chicago",
+    "IAD": "Washington", "DCA": "Washington", "BWI": "Washington",
+    "LAX": "Los Angeles", "BUR": "Los Angeles", "LGB": "Los Angeles", "ONT": "Los Angeles", "SNA": "Los Angeles",
+    "HOU": "Houston", "IAH": "Houston",
+    "YYZ": "Toronto", "YTZ": "Toronto",
+    "MEX": "Mexico City", "NLU": "Mexico City",
+    
+    # Europe
+    "LHR": "London", "LGW": "London", "STN": "London", "LCY": "London", "LTN": "London",
+    "CDG": "Paris", "ORY": "Paris",
+    "FCO": "Rome", "CIA": "Rome"
 }
 
 # --- Alliance Registry ---
 ALLIANCES = {
     "oneworld": {"AA", "BA", "IB", "QF", "CX", "JL", "QR", "AY", "AS", "AT", "MH", "UL", "HA"},
-    "star": {"UA", "LH", "SQ", "NZ", "AC", "NH", "OZ", "TK", "LX", "OS", "SN", "TP", "AI", "ET", "LO", "AZ", "LG", "AV"},
-    "skyteam": {"DL", "AF", "KL", "KE", "AM", "SV", "VN", "GA", "ME", "SK"}
+    "star": {"UA", "LH", "SQ", "NZ", "AC", "NH", "OZ", "TK", "LX", "OS", "SN", "TP", "AI", "ET", "LO", "AZ", "LG", "AV", "CA", "ZH", "TG", "BR"},
+    "skyteam": {"DL", "AF", "KL", "KE", "AM", "SV", "VN", "GA", "ME", "SK", "MU", "MF", "CI"}
 }
 
 # --- Airline Hub Registry ---
 AIRLINE_HUBS = {
-    # South America (New Additions)
-    "LA": {"SCL", "GRU", "LIM", "BOG", "AEP", "GRU"}, # LATAM
-    "AV": {"BOG", "SAL", "LIM"},                     # Avianca
+    # Taiwan
+    "BR": {"TPE", "KHH"},                           # EVA Air
+    "CI": {"TPE", "KHH"},                           # China Airlines
+    "JX": {"TPE"},                                  # STARLUX Airlines
+
+    # Southeast Asia
+    "TG": {"BKK"},                                  # Thai Airways
+    "FD": {"DMK", "BKK", "HKT", "CNX"},             # Thai AirAsia
+    "5J": {"CEB", "MNL", "CRK", "DVO", "ILO"},      # Cebu Pacific
+    "PR": {"MNL", "CEB", "CRK", "DVO"},             # Philippine Airlines
+    "VN": {"HAN", "SGN", "DAD"},                    # Vietnam Airlines
+    "GA": {"CGK", "DPS", "SUB"},                    # Garuda Indonesia
+    "MH": {"KUL"},                                  # Malaysia Airlines
+    "AK": {"KUL", "BKI", "KCH", "PEN"},             # AirAsia
+    "SQ": {"SIN"},                                  # Singapore Airlines
+
+    # Mainland China
+    "CA": {"PEK", "PKX", "CTU", "TFU", "PVG", "SHA", "SZX"}, 
+    "MU": {"PVG", "SHA", "KMG", "XIY", "PKX"},              
+    "CZ": {"CAN", "PKX", "SZX", "CSX", "CKG"},              
+    "HU": {"HAK", "PEK", "SZX", "XIY"},                     
+    "ZH": {"SZX", "CAN", "PEK"},                            
+    "MF": {"XMN", "FOC", "PKX"},                            
+
+    # South & Central America
+    "LA": {"SCL", "GRU", "LIM", "BOG", "AEP"},               
+    "AV": {"BOG", "SAL", "LIM"},                            
     
-    # Canada & Mexico
+    # North America
     "AC": {"YYZ", "YVR", "YUL", "YYC", "YOW", "YHZ"}, 
     "WS": {"YYC", "YYZ", "YVR", "YEG", "YWG"},       
     "AM": {"MEX", "MTY", "GDL", "CUN", "TIJ"}, 
-    
-    # USA & JetBlue
     "B6": {"JFK", "BOS", "FLL", "MCO", "LGB", "SJU", "PBI"},
     "UA": {"ORD", "SFO", "EWR", "DEN", "IAH", "LAX", "IAD", "HNL"},
     "AA": {"CLT", "DFW", "MIA", "PHL", "PHX", "DCA", "ORD", "LGA", "LAX", "JFK"},
     "DL": {"ATL", "DTW", "MSP", "SLC", "JFK", "LGA", "BOS", "LAX", "SEA", "HNL"},
     
-    # Europe, Oceania, & Asia
+    # Europe & Oceania
     "BA": {"LHR", "LGW", "LCY"}, "IB": {"MAD", "BCN"},
     "AF": {"CDG", "ORY", "NCE", "LYS"}, "LH": {"FRA", "MUC", "BER"},
     "QF": {"SYD", "MEL", "BNE", "PER", "ADL", "DRW", "WSI"},
-    "NZ": {"AKL", "CHC", "WLG"}, "SQ": {"SIN"}, "CX": {"HKG"}
+    "NZ": {"AKL", "CHC", "WLG"}, "CX": {"HKG"}
 }
 
 def download_data():
@@ -73,7 +126,7 @@ def get_filtered_airlines(iata_code, alliance_limit=None):
         matches = [m for m in matches if m in members]
     return ", ".join(sorted(set(matches)))
 
-def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, hub_only=False, same_country=False, same_continent=False):
+def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, country=None, hub_only=False, same_country=False, same_continent=False):
     download_data()
     airports_data = []
     origin = None
@@ -97,15 +150,20 @@ def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, hub_o
     results = []
     for row in airports_data:
         if not row['latitude_deg'] or not row['longitude_deg']: continue
+        
+        # Location filtering
         if same_country and row['iso_country'] != origin['iso_country']: continue
         if same_continent and row['continent'] != origin['continent']: continue
+        if country and row['iso_country'].upper() != country.upper(): continue
 
         dist = calculate_distance(float(origin['latitude_deg']), float(origin['longitude_deg']),
                                 float(row['latitude_deg']), float(row['longitude_deg']), unit=unit)
 
         if (unit not in ["country", "continent"]) and dist > max_dist: continue
+        
         iata = row['iata_code']
         
+        # Hub and Alliance logic
         if hub_only and iata not in all_known_hubs: continue
         if alliance and iata not in alliance_hubs: continue
         if not (hub_only or alliance) and row['type'] != 'large_airport': continue
@@ -113,9 +171,7 @@ def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, hub_o
         display_airlines = get_filtered_airlines(iata, alliance_limit=alliance)
         if (hub_only or alliance) and not display_airlines: continue
 
-        # Smart City Logic: 
-        # 1. Check override list (preserves spaces)
-        # 2. Fallback: Truncate technical names to first word
+        # Unified City Name Logic
         if iata in CITY_OVERRIDES:
             display_city = CITY_OVERRIDES[iata]
         else:
@@ -137,15 +193,17 @@ def main():
     parser.add_argument("code", help="Origin IATA code")
     parser.add_argument("max_dist", type=float, help="Radius")
     parser.add_argument("-u", "--unit", choices=["km", "mi", "nm", "country", "continent"], default="km")
-    parser.add_argument("-c", "--same-country", action="store_true")
-    parser.add_argument("-K", "--same-continent", action="store_true")
-    parser.add_argument("--alliance", choices=["oneworld", "star", "skyteam"])
-    parser.add_argument("--hub-only", action="store_true")
+    parser.add_argument("-c", "--same-country", action="store_true", help="Only same country as origin")
+    parser.add_argument("-K", "--same-continent", action="store_true", help="Only same continent as origin")
+    parser.add_argument("--alliance", choices=["oneworld", "star", "skyteam"], help="Filter by alliance hubs")
+    parser.add_argument("--country", help="Filter by a specific ISO country code (e.g., US, TW, TH)")
+    parser.add_argument("--hub-only", action="store_true", help="Only show known airline hubs")
 
     args = parser.parse_args()
     
     res = get_airports_in_range(args.code, args.max_dist, unit=args.unit, 
-                                 alliance=args.alliance, hub_only=args.hub_only,
+                                 alliance=args.alliance, country=args.country,
+                                 hub_only=args.hub_only,
                                  same_country=(args.unit=="country" or args.same_country),
                                  same_continent=(args.unit=="continent" or args.same_continent))
 
@@ -153,10 +211,14 @@ def main():
         print("No matches found.")
         return
 
-    mode_label = f"{args.alliance.upper()} " if args.alliance else ""
-    mode_label += "HUBS" if args.hub_only or args.alliance else "LARGE AIRPORTS"
+    active_filters = []
+    if args.alliance: active_filters.append(args.alliance.upper())
+    if args.country: active_filters.append(args.country.upper())
     
-    print(f"\nFound {len(res)} {mode_label} for {args.code.upper()}:")
+    label = " ".join(active_filters) + " " if active_filters else ""
+    label += "HUBS" if args.hub_only or args.alliance else "LARGE AIRPORTS"
+    
+    print(f"\nFound {len(res)} {label} for {args.code.upper()}:")
     print("=" * 130)
     print(f"{'Code':<8} | {'City':<18} | {'Name':<40} | {'Distance':<12} | {'Airlines'}")
     print("-" * 130)

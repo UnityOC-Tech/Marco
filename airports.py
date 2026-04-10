@@ -3675,12 +3675,12 @@ def main():
     # ── stats ─────────────────────────────────────────────────────────────────
     if args.stats:
         countries = sorted(set(a["country"] for a in AIRPORTS))
-        print(c(BOLD + CYAN, f"\n  ✈  Airport Database Statistics"))
+        print(c(BOLD + CYAN, "\n  ✈  Airport Database Statistics"))
         print(f"  {'─' * 40}")
         print(f"  Total airports : {c(BOLD, str(len(AIRPORTS)))}")
         print(f"  City codes     : {c(BOLD, str(len(CITY_CODES)))}")
         print(f"  Countries      : {c(BOLD, str(len(countries)))}")
-        print(f"\n  Countries covered:")
+        print("\n  Countries covered:")
         for co in countries:
             count = sum(1 for a in AIRPORTS if a["country"] == co)
             print(f"    {co:<30} {count} airport{'s' if count > 1 else ''}")

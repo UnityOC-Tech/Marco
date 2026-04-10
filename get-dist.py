@@ -213,7 +213,8 @@ def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, count
             if not origin and (row['iata_code'] == center_code or row['ident'] == center_code):
                 origin = row
     
-    if not origin: return None
+    if not origin:
+        return None
 
     all_known_hubs = set().union(*AIRLINE_HUBS.values())
     alliance_hubs = set()
@@ -235,12 +236,15 @@ def get_airports_in_range(center_code, max_dist, unit="km", alliance=None, count
         if (unit not in ["country", "continent"]) and dist > max_dist: continue
         
         iata = row['iata_code']
-        if hub_only and iata not in all_known_hubs: continue
-        if alliance and iata not in alliance_hubs: continue
+        if hub_only and iata not in all_known_hubs:
+            continue
+        if alliance and iata not in alliance_hubs:
+            continue
         if not (hub_only or alliance) and row['type'] != 'large_airport': continue
 
         display_airlines = get_filtered_airlines(iata, alliance_limit=alliance)
-        if (hub_only or alliance) and not display_airlines: continue
+        if (hub_only or alliance) and not display_airlines: 
+            continue
 
         if iata in CITY_OVERRIDES:
             display_city = CITY_OVERRIDES[iata]
@@ -270,7 +274,6 @@ def main():
     parser.add_argument("--hub-only", action="store_true")
 
     args = parser.parse_args()
-    
     res = get_airports_in_range(args.code, args.max_dist, unit=args.unit, 
                                  alliance=args.alliance, country=args.country,
                                  hub_only=args.hub_only,
@@ -284,10 +287,8 @@ def main():
     active_filters = []
     if args.alliance: active_filters.append(args.alliance.upper())
     if args.country: active_filters.append(args.country.upper())
-    
     label = " ".join(active_filters) + " " if active_filters else ""
     label += "HUBS" if args.hub_only or args.alliance else "LARGE AIRPORTS"
-    
     print(f"\nFound {len(res)} {label} for {args.code.upper()}:")
     print("=" * 135)
     print(f"{'Code':<8} | {'City':<18} | {'Name':<40} | {'Distance':<14} | {'Airlines'}")

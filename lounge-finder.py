@@ -1,11 +1,11 @@
 """
 2026 Global Alliance Lounge Finder
-Version 43.0 - Master Registry (Full Consolidated Global Edition)
+Version 44.1 - Master Registry (Full Consolidated Global Edition)
 Complete data for: 
-- North America: US (EWR, JFK, LAX, ORD, SLC, HNL, OGG, ANC, FAI)
+- North America: US (EWR, JFK, LAX, ORD, SLC, HNL, OGG, ANC, FAI, BOS, SEA, ATL, DFW, SFO), Canada (YYZ, YVR, YUL, YYC, YEG, YOW, YWG, YHZ)
 - Germany: MUC, FRA, BER, DUS, HAM, STR, CGN
 - France: CDG, ORY, NCE, LYS, MRS, TLS, BOD, BSL, NTE, MPL, SXB
-- UK/AU/IE: LHR, SYD, DUB
+- UK/AU/IE: LHR, SYD, MEL, BNE, DUB
 - Europe (Central/South): LUX, AMS, BRU, MAD, BCN, LIS, OPO, FCO, MXP, VIE, ZRH, GVA, CPH, WAW
 - Scandinavia & Baltics: KEF, OSL, ARN, HEL, TLL, RIX, VNO
 - CIS & Balkans: SVO, DME, LED, IKT, VVO, OVB, SVX, KZN, MSQ, ALA, NQZ, ATH, BEG, OTP, ZAG, SOF, LJU, TIA, SJJ
@@ -17,22 +17,22 @@ from typing import Dict, List, Optional
 
 # --- REGIONAL MAPPING ---
 ISO_MAP: Dict[str, str] = {
-    "US": "United States", "USA": "United States", "UK": "United Kingdom",
-    "AU": "Australia", "NZ": "New Zealand", "DE": "Germany", "IE": "Ireland",
-    "FR": "France", "LU": "Luxembourg", "NL": "Netherlands", "BE": "Belgium", 
-    "ES": "Spain", "PT": "Portugal", "IT": "Italy", "AT": "Austria", 
-    "CH": "Switzerland", "DK": "Denmark", "PL": "Poland", "LI": "Liechtenstein",
-    "IS": "Iceland", "NO": "Norway", "SE": "Sweden", "FI": "Finland",
-    "BY": "Belarus", "RU": "Russia", "KZ": "Kazakhstan", "EE": "Estonia", 
-    "LV": "Latvia", "LT": "Lithuania", "GR": "Greece", "RS": "Serbia", 
-    "RO": "Romania", "HR": "Croatia", "BG": "Bulgaria", "SI": "Slovenia", 
-    "AL": "Albania", "BA": "Bosnia", "JP": "Japan", "KR": "South Korea",
-    "ROK": "South Korea", "TW": "Taiwan", "ROC": "Taiwan"
+    "US": "United States", "USA": "United States", "CA": "Canada", "CAN": "Canada",
+    "UK": "United Kingdom", "AU": "Australia", "NZ": "New Zealand", "DE": "Germany", 
+    "IE": "Ireland", "FR": "France", "LU": "Luxembourg", "NL": "Netherlands", 
+    "BE": "Belgium", "ES": "Spain", "PT": "Portugal", "IT": "Italy", 
+    "AT": "Austria", "CH": "Switzerland", "DK": "Denmark", "PL": "Poland", 
+    "LI": "Liechtenstein", "IS": "Iceland", "NO": "Norway", "SE": "Sweden", 
+    "FI": "Finland", "BY": "Belarus", "RU": "Russia", "KZ": "Kazakhstan", 
+    "EE": "Estonia", "LV": "Latvia", "LT": "Lithuania", "GR": "Greece", 
+    "RS": "Serbia", "RO": "Romania", "HR": "Croatia", "BG": "Bulgaria", 
+    "SI": "Slovenia", "AL": "Albania", "BA": "Bosnia", "JP": "Japan", 
+    "KR": "South Korea", "ROK": "South Korea", "TW": "Taiwan", "ROC": "Taiwan"
 }
 
 # --- MASTER DATABASE ---
 LOUNGE_DATA: Dict[str, Dict[str, List[Dict]]] = {
-    # --- NORTH AMERICA ---
+    # --- NORTH AMERICA (US) ---
     "EWR": {"Star Alliance": [{"name": "United Polaris Lounge", "operator": "United", "terminal": "T-C", "features": ["fine-dining", "nap-pods"], "location": "C102-C120"}], "Oneworld / SkyTeam": [{"name": "British Airways Lounge", "operator": "BA", "terminal": "T-B", "features": ["dining"], "location": "Near B50"}], "Premium": [{"name": "Centurion Lounge", "operator": "AMEX", "terminal": "T-A", "features": ["jazz-bar"], "location": "Level 2"}]},
     "JFK": {"SkyTeam": [{"name": "Delta One Lounge", "operator": "Delta", "terminal": "T4", "features": ["spa"], "location": "Gate B27"}]},
     "LAX": {"Oneworld": [{"name": "Qantas First", "operator": "Qantas", "terminal": "TBIT", "features": ["spa"], "location": "Level 5"}]},
@@ -42,6 +42,21 @@ LOUNGE_DATA: Dict[str, Dict[str, List[Dict]]] = {
     "OGG": {"Oneworld": [{"name": "Premier Club", "operator": "Hawaiian", "terminal": "Main", "features": ["wifi"], "location": "Gate 17"}]},
     "ANC": {"Oneworld": [{"name": "Alaska Lounge", "operator": "Alaska", "terminal": "C", "features": ["fireplace"], "location": "Gate C1"}]},
     "FAI": {"Oneworld": [{"name": "Alaska Lounge", "operator": "Alaska", "terminal": "Main", "features": ["wifi"], "location": "Post-Security"}]},
+    "BOS": {"SkyTeam": [{"name": "Air France Lounge", "operator": "Air France", "terminal": "E", "features": ["showers", "buffet"], "location": "Gate E11"}], "Oneworld": [{"name": "British Airways Galleries Lounge", "operator": "BA", "terminal": "E", "features": ["dining"], "location": "Upper Level"}], "Premium": [{"name": "Chase Sapphire Lounge", "operator": "Chase", "terminal": "B-C", "features": ["wellness-room"], "location": "Center Concourse"}]},
+    "SEA": {"Oneworld": [{"name": "Alaska Lounge", "operator": "Alaska", "terminal": "N", "features": ["bar", "fireplace"], "location": "Mezzanine"}], "SkyTeam": [{"name": "Delta Sky Club", "operator": "Delta", "terminal": "A", "features": ["sky-deck"], "location": "Near Gate A1"}]},
+    "ATL": {"SkyTeam": [{"name": "Delta Sky Club", "operator": "Delta", "terminal": "F", "features": ["sky-deck", "showers"], "location": "Mezzanine Level"}]},
+    "DFW": {"Oneworld": [{"name": "American Airlines Flagship Lounge", "operator": "American", "terminal": "D", "features": ["fine-dining"], "location": "Near Gate D21"}, {"name": "Capital One Lounge", "operator": "Capital One", "terminal": "D", "features": ["grab-and-go", "pelotons"], "location": "Near Gate D22"}]},
+    "SFO": {"Star Alliance": [{"name": "United Polaris Lounge", "operator": "United", "terminal": "Int-G", "features": ["fine-dining", "showers"], "location": "Gate G92"}]},
+
+    # --- NORTH AMERICA (CANADA) ---
+    "YYZ": {"Star Alliance": [{"name": "Air Canada Signature Suite", "operator": "Air Canada", "terminal": "T1", "features": ["la-carte-dining", "cocktails"], "location": "International, Gate E73"}], "Oneworld": [{"name": "British Airways Galleries Lounge", "operator": "BA", "terminal": "T3", "features": ["buffet", "business-center"], "location": "Above Gate C32"}], "Premium": [{"name": "Plaza Premium Lounge", "operator": "Plaza Premium", "terminal": "T3", "features": ["showers", "bar"], "location": "Domestic, Gate B24"}]},
+    "YVR": {"Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Main", "features": ["local-beer", "showers"], "location": "International Node"}, {"name": "Signature Suite", "operator": "Air Canada", "terminal": "Main", "features": ["fine-dining"], "location": "Gate 52"}], "Oneworld": [{"name": "Cathay Pacific Lounge", "operator": "Cathay", "terminal": "Int", "features": ["noodle-bar"], "location": "Level 4, Gate D71"}], "SkyTeam": [{"name": "SkyTeam Lounge", "operator": "Global Lounge", "terminal": "Int", "features": ["cooked-to-order-food"], "location": "Concourse D, Gate 53"}]},
+    "YUL": {"Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Int", "features": ["poutine-bar", "views"], "location": "Gate 52"}], "SkyTeam": [{"name": "Air France Lounge", "operator": "Air France", "terminal": "Int", "features": ["french-buffet", "showers"], "location": "Gate 57"}], "Premium": [{"name": "National Bank Lounge", "operator": "YUL", "terminal": "Int", "features": ["bar", "snacks"], "location": "Gate 53"}]},
+    "YYC": {"Premium": [{"name": "WestJet Elevation Lounge", "operator": "WestJet", "terminal": "Concourse B", "features": ["chef-crafted-dining", "showers"], "location": "Post-Security, Level 2"}], "Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Concourse C", "features": ["snacks", "work-zones"], "location": "Gate C50"}]},
+    "YEG": {"Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Main", "features": ["bar", "wifi"], "location": "South Concourse"}], "Premium": [{"name": "Plaza Premium Lounge", "operator": "Plaza Premium", "terminal": "Main", "features": ["buffet"], "location": "Near Gate 56"}]},
+    "YOW": {"Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Main", "features": ["refreshments"], "location": "Near Gate 18"}], "Premium": [{"name": "Aspire Salon Lounge", "operator": "Swissport", "terminal": "Main", "features": ["panoramic-views"], "location": "Near Gate 17"}]},
+    "YWG": {"Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Main", "features": ["snacks"], "location": "Near Gate 9"}], "Premium": [{"name": "Plaza Premium Lounge", "operator": "Plaza Premium", "terminal": "Main", "features": ["hot-meals"], "location": "Near Gate 6"}]},
+    "YHZ": {"Star Alliance": [{"name": "Air Canada Maple Leaf Lounge", "operator": "Air Canada", "terminal": "Main", "features": ["local-snacks"], "location": "Departures Level, Gate 20"}]},
 
     # --- GERMANY & FRANCE ---
     "FRA": {"Star Alliance": [{"name": "Lufthansa First Class Terminal", "operator": "Lufthansa", "terminal": "FCT", "features": ["valet"], "location": "Stand-alone"}]},
@@ -124,21 +139,86 @@ LOUNGE_DATA: Dict[str, Dict[str, List[Dict]]] = {
     "MSQ": {"Contract": [{"name": "International Lounge", "operator": "MSQ", "terminal": "Main", "features": ["smoking"], "location": "Gate 3"}]},
     "ALA": {"Premium": [{"name": "The Shanyraq", "operator": "Air Astana", "terminal": "T2", "features": ["cultural"], "location": "Gate 201"}]},
     "NQZ": {"Premium": [{"name": "The Shanyraq", "operator": "Air Astana", "terminal": "Main", "features": ["local"], "location": "Airside"}]},
+    
+    # --- UK/AU/IE EXPANDED ---
     "LHR": {"Oneworld": [{"name": "Cathay First", "operator": "Cathay", "terminal": "T3", "features": ["dining"], "location": "Lounge B"}]},
-    "SYD": {"Oneworld": [{"name": "Qantas First", "operator": "Qantas", "terminal": "T1", "features": ["spa"], "location": "L4"}]},
-    "DUB": {"Airport": [{"name": "Phoenix Lounge", "operator": "daa", "terminal": "T1", "features": ["buffet"], "location": "Terminal 1"}]}
+    "DUB": {"Airport": [{"name": "Phoenix Lounge", "operator": "daa", "terminal": "T1", "features": ["buffet"], "location": "Terminal 1"}]},
+    
+    "SYD": {
+        "Oneworld": [
+            {"name": "Qantas First Lounge", "operator": "Qantas", "terminal": "T1", "features": ["spa", "la-carte-dining", "views"], "location": "Level 4"},
+            {"name": "Qantas International Business Lounge", "operator": "Qantas", "terminal": "T1", "features": ["barista-service", "gelato-station"], "location": "Level 3"},
+            {"name": "Qantas Domestic Business Lounge", "operator": "Qantas", "terminal": "T3", "features": ["spice-bar", "work-zones"], "location": "Gate 4, Departures Level"},
+            {"name": "The Qantas Club", "operator": "Qantas", "terminal": "T3", "features": ["buffet", "family-zone"], "location": "Near Gate 5"}
+        ],
+        "SkyTeam": [
+            {"name": "SkyTeam Exclusive Lounge", "operator": "Plaza Premium", "terminal": "T1", "features": ["noodle-bar", "showers", "wine-bar"], "location": "Pier B, Near Gate 24"}
+        ],
+        "Star Alliance": [
+            {"name": "Singapore Airlines SilverKris Lounge", "operator": "SIA", "terminal": "T1", "features": ["laksa-bar", "productivity-pods"], "location": "Near Gate 50-63"},
+            {"name": "Air New Zealand Lounge", "operator": "Air NZ", "terminal": "T1", "features": ["barista-cafe", "food-theatre"], "location": "Level 4"}
+        ],
+        "Premium": [
+            {"name": "American Express Centurion Lounge", "operator": "AMEX", "terminal": "T1", "features": ["live-cooking", "craft-beer"], "location": "Near Gate 24"},
+            {"name": "Plaza Premium Departures Lounge", "operator": "Plaza Premium", "terminal": "T1", "features": ["aerobar", "barista-coffee"], "location": "Near Gates 25-26"},
+            {"name": "The House", "operator": "Airport Dimensions", "terminal": "T1", "features": ["waiter-service", "full-bar"], "location": "Pier C, Towards Gate 51"},
+            {"name": "Virgin Australia Lounge", "operator": "Virgin Australia", "terminal": "T2", "features": ["barista-service", "premium-wine"], "location": "Right after security"}
+        ]
+    },
+
+    "MEL": {
+        "Oneworld": [
+            {"name": "Qantas First Lounge", "operator": "Qantas", "terminal": "T2", "features": ["la-carte-dining", "day-spa"], "location": "Level 3, near Gate 9"},
+            {"name": "Qantas International Business Lounge", "operator": "Qantas", "terminal": "T2", "features": ["barista", "seasonal-buffet"], "location": "Level 1"},
+            {"name": "Qantas Domestic Business Lounge", "operator": "Qantas", "terminal": "T1", "features": ["spice-bar", "barista-coffee"], "location": "Mezzanine Level"}
+        ],
+        "Star Alliance": [
+            {"name": "Singapore Airlines SilverKris Lounge", "operator": "SIA", "terminal": "T2", "features": ["singaporean-cuisine", "showers"], "location": "Level 1"},
+            {"name": "Air New Zealand Lounge", "operator": "Air NZ", "terminal": "T2", "features": ["barista-station", "panoramic-views"], "location": "Ground Floor"}
+        ],
+        "Premium": [
+            {"name": "American Express Lounge", "operator": "AMEX", "terminal": "T2", "features": ["premium-dining", "open-bar"], "location": "Level 1"},
+            {"name": "Marhaba Lounge", "operator": "dnata", "terminal": "T2", "features": ["showers", "massage-chairs"], "location": "Level 3, Gates 9-11"},
+            {"name": "The House", "operator": "Airport Dimensions", "terminal": "T2", "features": ["bistro-menu", "full-cocktail-bar"], "location": "Annex building, near gate 15"},
+            {"name": "Plaza Premium Lounge", "operator": "Plaza Premium", "terminal": "T2", "features": ["buffet", "coffee-bar"], "location": "Near Gate 9"},
+            {"name": "Virgin Australia Lounge", "operator": "Virgin Australia", "terminal": "T3", "features": ["wine-bar", "espresso-espresso"], "location": "Mezzanine Level"},
+            {"name": "Rex Lounge", "operator": "Regional Express", "terminal": "T4", "features": ["snacks", "massage-chairs"], "location": "Ground Floor"}
+        ]
+    },
+
+    "BNE": {
+        "Oneworld": [
+            {"name": "Qantas International Lounge", "operator": "Qantas", "terminal": "International", "features": ["cocktail-bar", "breakfast-hatch"], "location": "Level 4, near Gate 82"},
+            {"name": "Qantas Domestic Business Lounge", "operator": "Qantas", "terminal": "Domestic", "features": ["lounge-dining", "barista"], "location": "Level 2"}
+        ],
+        "Star Alliance": [
+            {"name": "Singapore Airlines SilverKris Lounge", "operator": "SIA", "terminal": "International", "features": ["batik-design", "productivity-pods", "showers"], "location": "Level 4, Departure Hall near Gate 81"},
+            {"name": "Air New Zealand Lounge", "operator": "Air NZ", "terminal": "International", "features": ["tarmac-views", "buffet"], "location": "Level 4, near Gate 82"}
+        ],
+        "Premium": [
+            {"name": "Emirates Lounge", "operator": "Emirates", "terminal": "International", "features": ["direct-boarding", "gourmet-buffet"], "location": "Level 4"},
+            {"name": "Aspire Lounge", "operator": "Swissport", "terminal": "International", "features": ["barista-coffee", "local-ingredients"], "location": "Mezzanine, Level 4"},
+            {"name": "Plaza Premium Lounge", "operator": "Plaza Premium", "terminal": "International", "features": ["vietnamese-pho", "views"], "location": "Level 3, near Gate 77"},
+            {"name": "Virgin Australia Lounge", "operator": "Virgin Australia", "terminal": "Domestic", "features": ["barista", "premium-wine"], "location": "Level 2"}
+        ]
+    }
 }
 
 # --- COUNTRY MAPPING ---
 AIRPORT_TO_COUNTRY: Dict[str, str] = {
-    "EWR": "United States", "JFK": "United States", "LAX": "United States", "ORD": "United States", "SLC": "United States", "HNL": "United States", "OGG": "United States", "ANC": "United States", "FAI": "United States",
+    "EWR": "United States", "JFK": "United States", "LAX": "United States", "ORD": "United States", 
+    "SLC": "United States", "HNL": "United States", "OGG": "United States", "ANC": "United States", 
+    "FAI": "United States", "BOS": "United States", "SEA": "United States", "ATL": "United States",
+    "DFW": "United States", "SFO": "United States",
+    "YYZ": "Canada", "YVR": "Canada", "YUL": "Canada", "YYC": "Canada", 
+    "YEG": "Canada", "YOW": "Canada", "YWG": "Canada", "YHZ": "Canada",
     "FRA": "Germany", "MUC": "Germany", "BER": "Germany", "DUS": "Germany", "HAM": "Germany", "STR": "Germany", "CGN": "Germany",
     "CDG": "France", "ORY": "France", "NCE": "France", "LYS": "France", "MRS": "France", "TLS": "France", "BOD": "France", "BSL": "France", "NTE": "France", "MPL": "France", "SXB": "France",
     "LUX": "Luxembourg", "AMS": "Netherlands", "BRU": "Belgium", "MAD": "Spain", "BCN": "Spain", "LIS": "Portugal", "OPO": "Portugal", "FCO": "Italy", "MXP": "Italy", "VIE": "Austria", "ZRH": "Switzerland", "GVA": "Switzerland", "CPH": "Denmark", "WAW": "Poland",
     "SVO": "Russia", "DME": "Russia", "LED": "Russia", "IKT": "Russia", "VVO": "Russia", "OVB": "Russia", "SVX": "Russia", "KZN": "Russia",
     "HND": "Japan", "NRT": "Japan", "KIX": "Japan", "ITM": "Japan", "ICN": "South Korea", "GMP": "South Korea", "PUS": "South Korea", "TPE": "Taiwan", "TSA": "Taiwan", "KHH": "Taiwan",
     "KEF": "Iceland", "OSL": "Norway", "ARN": "Sweden", "HEL": "Finland", "TLL": "Estonia", "RIX": "Latvia", "VNO": "Lithuania", "ATH": "Greece", "BEG": "Serbia", "OTP": "Romania", "ZAG": "Croatia", "SOF": "Bulgaria", "LJU": "Slovenia", "TIA": "Albania", "SJJ": "Bosnia", "MSQ": "Belarus", "ALA": "Kazakhstan", "NQZ": "Kazakhstan",
-    "LHR": "United Kingdom", "SYD": "Australia", "DUB": "Ireland"
+    "LHR": "United Kingdom", "SYD": "Australia", "MEL": "Australia", "BNE": "Australia", "DUB": "Ireland"
 }
 
 def display_lounges(airport_code: str, alliance: Optional[str] = None, features: Optional[List[str]] = None, operator: Optional[str] = None) -> None:

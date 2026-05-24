@@ -1,15 +1,29 @@
 """
 2026 Global Alliance Lounge Finder
 Version 44.1 - Master Registry (Full Consolidated Global Edition)
-Complete data for: 
-- North America: US (EWR, JFK, LAX, ORD, SLC, HNL, OGG, ANC, FAI, BOS, SEA, ATL, DFW, SFO), Canada (YYZ, YVR, YUL, YYC, YEG, YOW, YWG, YHZ)
+Entries for the following hubs, operating bases and focus cities: 
+- Australia: SYD, MEL, BNE
+- USA: EWR, JFK, LAX, ORD, SLC, HNL, OGG, ANC, FAI, BOS, SEA, ATL, DFW, SFO 
+- Canada: YYZ, YVR, YUL, YYC, YEG, YOW, YWG, YHZ
 - Germany: MUC, FRA, BER, DUS, HAM, STR, CGN
 - France: CDG, ORY, NCE, LYS, MRS, TLS, BOD, BSL, NTE, MPL, SXB
-- UK/AU/IE: LHR, SYD, MEL, BNE, DUB
+- UK/IE: LHR, DUB ( missing!)
 - Europe (Central/South): LUX, AMS, BRU, MAD, BCN, LIS, OPO, FCO, MXP, VIE, ZRH, GVA, CPH, WAW
 - Scandinavia & Baltics: KEF, OSL, ARN, HEL, TLL, RIX, VNO
 - CIS & Balkans: SVO, DME, LED, IKT, VVO, OVB, SVX, KZN, MSQ, ALA, NQZ, ATH, BEG, OTP, ZAG, SOF, LJU, TIA, SJJ
 - East Asia: HND, NRT, KIX, ITM, ICN, GMP, PUS, TPE, TSA, KHH
+
+"Missing" list:
+- YTZ YYT
+- LGA BUR PDX PWM DAL HOU IAH MIA MDW MKE MSP IND CLE CVG CLT PHX LAS SNA SJC 
+- PER CBR CNS ASP WSI ADL HBA CXI CCK NLK BME OOL NTL MCY LST MKY ROK PPP HTI HVB AVL
+- AKL CHC WLG ZQN DUD NSN PMR HLZ ROT IVC
+- NAN SUV NOU 
+- 
+- DPS CGK LOP SUB KNO  
+- MAN SNN ORK BFS BHD LPL EDI GLA NCL LBA STN LGA LCY LTN SEN CWL IOM 
+- INN SZG LIN CIA ATH FAO FNC PDL FLW GRW HOR PIX SMA TER COV 
+- PMI ALC AGP SVQ BIO VLC ACE LPA TFS TFN IBZ MAH SDR ZAZ OVD FUE SPC LEN PNA SCQ SLM 
 """
 
 import argparse

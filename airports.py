@@ -4,6 +4,8 @@
 Supports IATA (e.g. LAX) and ICAO (e.g. KLAX) code lookups.
 Returns: name, city, country, timezone, coordinates, and both codes.
 
+Definitely missing: Avalon (AVL)
+
 Usage:
   python airport_lookup.py LAX
   python airport_lookup.py EGLL
